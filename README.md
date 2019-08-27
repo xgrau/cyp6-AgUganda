@@ -2,6 +2,8 @@
 
 Haplotype analyses of the CYP6 cluster in *Anopheles gambiae* samples from Uganda (UGS), using Ag1000G Phase 1 data.
 
+## Output
+
 Outputs are in these folders:
 
 * `haplotype_analysis_28jun19.html` or `.ipynb`: python notebooks with code & analyses
@@ -16,3 +18,11 @@ Default cluster names are not very informative -- here's what they actually are:
 * `cluster_no_alt`: all other non-wt haplotypes  with less than 1% frequency in UGS are put in this group
 
 All other folders and files are used for input/metadata/etc.
+
+## Input
+
+Download Ag1000G Phase 1 data from here
+
+```
+ftp://ngs.sanger.ac.uk/production/ag1000g/phase1/AR3
+```
