@@ -1,0 +1,532 @@
+IQ-TREE multicore version 1.6.10 for Linux 64-bit built Feb 19 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    monolit (AVX512, FMA3, 62 GB RAM)
+Command: iqtree -s cyp6_UGS_cyp6.alig_loc.fasta -nt 4 -m TEST+ASC -mset GTR -pre iqr_corehap -bb 1000 -nm 10000 -cptime 3600
+Seed:    459327 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Aug 27 13:00:54 2019
+Kernel:  AVX+FMA - 4 threads (12 CPU cores detected)
+
+Reading alignment file cyp6_UGS_cyp6.alig_loc.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 206 sequences with 582 columns, 469 distinct patterns
+582 parsimony-informative, 0 singleton sites, 0 constant sites
+                                               Gap/Ambiguity  Composition  p-value
+   1  AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     99.95%
+   2  AC0090-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     99.95%
+   3  AC0091-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     99.95%
+   4  AC0091-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     99.95%
+   5  AC0092-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+   6  AC0092-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+   7  AC0093-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+   8  AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+   9  AC0094-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+  10  AC0094-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+  11  AC0095-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+  12  AC0095-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+  13  AC0096-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+  14  AC0096-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+  15  AC0097-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  16  AC0097-Cb_UGS_gt0_zzb1_dup1_indel1_clu2_tag0     0.00%    passed     86.02%
+  17  AC0098-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  18  AC0098-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.97%
+  19  AC0099-Ca_UGS_gt1_zzb2_dup0_indel2_clu3_tag1     0.00%    passed     99.95%
+  20  AC0099-Cb_UGS_gt1_zzb2_dup0_indel2_clu4_tag1     0.00%    passed     99.95%
+  21  AC0100-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  22  AC0100-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  23  AC0101-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+  24  AC0101-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+  25  AC0102-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+  26  AC0102-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  27  AC0103-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  28  AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  29  AC0104-Ca_UGS_gt0_zzb1_dup1_indel1_clu5_tag0     0.00%    passed     94.86%
+  30  AC0104-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  31  AC0106-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+  32  AC0106-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+  33  AC0107-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+  34  AC0107-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+  35  AC0108-Ca_UGS_gt1_zzb2_dup1_indel2_clu6_tag1     0.00%    passed     64.18%
+  36  AC0108-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  37  AC0109-Ca_UGS_gt0_zzb0_dup0_indel0_clu7_tag0     0.00%    passed     49.30%
+  38  AC0109-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     99.03%
+  39  AC0110-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  40  AC0110-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  41  AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  42  AC0111-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+  43  AC0112-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+  44  AC0112-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0     0.00%    passed     92.57%
+  45  AC0113-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  46  AC0113-Cb_UGS_gt0_zzb1_dup1_indel1_clu9_tag0     0.00%    passed     40.10%
+  47  AC0114-Ca_UGS_gt0_zzb1_dup1_indel1_clu10_tag0    0.00%    passed     46.46%
+  48  AC0114-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  49  AC0115-Ca_UGS_gt0_zzb1_dup0_indel1_clu11_tag0    0.00%    passed     53.90%
+  50  AC0115-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+  51  AC0116-Ca_UGS_gt1_zzb1_dup0_indel1_clu12_tag1    0.00%    passed     97.61%
+  52  AC0116-Cb_UGS_gt0_zzb1_dup0_indel1_clu13_tag0    0.00%    passed     99.03%
+  53  AC0117-Ca_UGS_gt0_zzb1_dup0_indel1_clu14_tag1    0.00%    passed     93.77%
+  54  AC0117-Cb_UGS_gt0_zzb1_dup0_indel1_clu15_tag0    0.00%    passed     13.70%
+  55  AC0118-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  56  AC0118-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     97.94%
+  57  AC0119-Ca_UGS_gt0_zzb1_dup0_indel1_clu16_tag0    0.00%    passed     72.31%
+  58  AC0119-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+  59  AC0120-Ca_UGS_gt1_zzb1_dup1_indel1_clu17_tag1    0.00%    passed     99.95%
+  60  AC0120-Cb_UGS_gt0_zzb1_dup1_indel1_clu18_tag0    0.00%    passed     94.86%
+  61  AC0121-Ca_UGS_gt1_zzb2_dup0_indel2_clu19_tag1    0.00%    passed     99.95%
+  62  AC0121-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     99.95%
+  63  AC0122-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+  64  AC0122-Cb_UGS_gt1_zzb1_dup0_indel1_clu20_tag1    0.00%    passed     87.39%
+  65  AC0123-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+  66  AC0123-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1    0.00%    passed     99.95%
+  67  AC0124-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+  68  AC0124-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  69  AC0125-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+  70  AC0125-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+  71  AC0126-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  72  AC0126-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  73  AC0127-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     99.03%
+  74  AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0    0.00%    passed     45.21%
+  75  AC0128-Ca_UGS_gt1_zzb2_dup0_indel2_clu22_tag1    0.00%    passed     99.95%
+  76  AC0128-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     99.95%
+  77  AC0129-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  78  AC0129-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+  79  AC0130-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     99.03%
+  80  AC0130-Cb_UGS_gt0_zzb0_dup0_indel0_clu23_tag0    0.00%    passed     91.17%
+  81  AC0131-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+  82  AC0131-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+  83  AC0132-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+  84  AC0132-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  85  AC0133-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+  86  AC0133-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0     0.00%    passed     92.57%
+  87  AC0135-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  88  AC0135-Cb_UGS_gt0_zzb1_dup1_indel1_clu24_tag0    0.00%    passed     40.02%
+  89  AC0136-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  90  AC0136-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  91  AC0137-Ca_UGS_gt0_zzb1_dup0_indel1_clu25_tag0    0.00%    passed     83.89%
+  92  AC0137-Cb_UGS_gt1_zzb1_dup0_indel1_clu26_tag1    0.00%    passed     62.43%
+  93  AC0138-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  94  AC0138-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  95  AC0139-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  96  AC0139-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+  97  AC0140-Ca_UGS_gt0_zzb1_dup2_indel1_clu1_tag0     0.00%    passed     99.03%
+  98  AC0140-Cb_UGS_gt1_zzb1_dup2_indel1_clu0_tag1     0.00%    passed     99.82%
+  99  AC0142-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 100  AC0142-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 101  AC0143-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 102  AC0143-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 103  AC0144-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 104  AC0144-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 105  AC0145-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0     0.00%    passed     92.57%
+ 106  AC0145-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 107  AC0147-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+ 108  AC0147-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+ 109  AC0148-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 110  AC0148-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 111  AC0149-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+ 112  AC0149-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 113  AC0150-Ca_UGS_gt0_zzb1_dup1_indel1_clu27_tag0    0.00%    passed     43.55%
+ 114  AC0150-Cb_UGS_gt0_zzb1_dup1_indel1_clu28_tag0    0.00%    passed     46.63%
+ 115  AC0151-Ca_UGS_gt0_zzb1_dup1_indel1_clu29_tag0    0.00%    passed     40.51%
+ 116  AC0151-Cb_UGS_gt1_zzb1_dup1_indel1_clu30_tag1    0.00%    passed     99.95%
+ 117  AC0152-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+ 118  AC0152-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0    0.00%    passed     45.21%
+ 119  AC0153-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+ 120  AC0153-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+ 121  AC0154-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0    0.00%    passed     45.21%
+ 122  AC0154-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+ 123  AC0156-Ca_UGS_gt0_zzb1_dup1_indel1_clu24_tag0    0.00%    passed     40.02%
+ 124  AC0156-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 125  AC0158-Ca_UGS_gt0_zzb0_dup0_indel0_clu31_tag0    0.00%    passed     70.63%
+ 126  AC0158-Cb_UGS_gt0_zzb0_dup0_indel0_clu32_tag0    0.00%    passed     44.43%
+ 127  AC0159-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     99.95%
+ 128  AC0159-Cb_UGS_gt1_zzb2_dup0_indel2_clu19_tag1    0.00%    passed     99.95%
+ 129  AC0160-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 130  AC0160-Cb_UGS_gt0_zzb1_dup1_indel1_clu21_tag0    0.00%    passed     45.21%
+ 131  AC0161-Ca_UGS_gt0_zzb1_dup0_indel1_clu33_tag0    0.00%    passed     86.02%
+ 132  AC0161-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+ 133  AC0162-Ca_UGS_gt0_zzb1_dup1_indel1_clu34_tag0    0.00%    passed     86.35%
+ 134  AC0162-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 135  AC0163-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 136  AC0163-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+ 137  AC0164-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+ 138  AC0164-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 139  AC0166-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+ 140  AC0166-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+ 141  AC0167-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+ 142  AC0167-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+ 143  AC0168-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+ 144  AC0168-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+ 145  AC0169-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+ 146  AC0169-Cb_UGS_gt0_zzb1_dup1_indel1_clu35_tag1    0.00%    passed     26.37%
+ 147  AC0170-Ca_UGS_gt0_zzb1_dup0_indel1_clu36_tag0    0.00%    passed     93.37%
+ 148  AC0170-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+ 149  AC0171-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+ 150  AC0171-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+ 151  AC0172-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 152  AC0172-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 153  AC0173-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 154  AC0173-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 155  AC0174-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 156  AC0174-Cb_UGS_gt0_zzb1_dup1_indel1_clu33_tag0    0.00%    passed     86.02%
+ 157  AC0176-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+ 158  AC0176-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0    0.00%    passed     45.21%
+ 159  AC0178-Ca_UGS_gt0_zzb0_dup0_indel0_clu10_tag0    0.00%    passed     46.46%
+ 160  AC0178-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     99.03%
+ 161  AC0179-Ca_UGS_gt0_zzb0_dup0_indel0_clu37_tag0    0.00%    passed     45.52%
+ 162  AC0179-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0    0.00%    passed     45.21%
+ 163  AC0180-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+ 164  AC0180-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 165  AC0181-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 166  AC0181-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 167  AC0182-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     99.44%
+ 168  AC0182-Cb_UGS_gt0_zzb0_dup0_indel0_clu38_tag0    0.00%    passed     46.36%
+ 169  AC0183-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 170  AC0183-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 171  AC0184-Ca_UGS_gt0_zzb1_dup1_indel1_clu39_tag0    0.00%    passed     46.68%
+ 172  AC0184-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 173  AC0186-Ca_UGS_gt0_zzb1_dup0_indel1_clu7_tag0     0.00%    passed     49.30%
+ 174  AC0186-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+ 175  AC0187-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+ 176  AC0187-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.95%
+ 177  AC0188-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 178  AC0188-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.71%
+ 179  AC0189-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 180  AC0189-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+ 181  AC0190-Ca_UGS_gt1_zzb2_dup3_indel2_clu0_tag1     0.00%    passed     99.98%
+ 182  AC0190-Cb_UGS_gt1_zzb2_dup3_indel2_clu0_tag1     0.00%    passed     99.95%
+ 183  AC0191-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 184  AC0191-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 185  AC0192-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     99.03%
+ 186  AC0192-Cb_UGS_gt0_zzb0_dup0_indel0_clu7_tag0     0.00%    passed     49.30%
+ 187  AC0193-Ca_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1    0.00%    passed     99.95%
+ 188  AC0193-Cb_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1    0.00%    passed     99.95%
+ 189  AC0194-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0     0.00%    passed     92.57%
+ 190  AC0194-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 191  AC0195-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 192  AC0195-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.03%
+ 193  AC0196-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+ 194  AC0196-Cb_UGS_gt0_zzb1_dup1_indel1_clu40_tag0    0.00%    passed     95.58%
+ 195  AC0197-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 196  AC0197-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 197  AC0199-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 198  AC0199-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 199  AC0200-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0    0.00%    passed     45.21%
+ 200  AC0200-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1    0.00%    passed     99.95%
+ 201  AC0201-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.03%
+ 202  AC0201-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+ 203  AC0202-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+ 204  AC0202-Cb_UGS_gt0_zzb1_dup0_indel1_clu9_tag0     0.00%    passed     40.10%
+ 205  AC0203-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.95%
+ 206  AC0203-Cb_UGS_gt1_zzb2_dup1_indel2_clu19_tag1    0.00%    passed     99.95%
+****  TOTAL                                            0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: AC0090-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1 is identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1 but kept for subsequent analysis
+NOTE: AC0094-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 is identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 but kept for subsequent analysis
+NOTE: AC0161-Ca_UGS_gt0_zzb1_dup0_indel1_clu33_tag0 is identical to AC0097-Cb_UGS_gt0_zzb1_dup1_indel1_clu2_tag0 but kept for subsequent analysis
+NOTE: AC0120-Cb_UGS_gt0_zzb1_dup1_indel1_clu18_tag0 is identical to AC0104-Ca_UGS_gt0_zzb1_dup1_indel1_clu5_tag0 but kept for subsequent analysis
+NOTE: AC0186-Ca_UGS_gt0_zzb1_dup0_indel1_clu7_tag0 is identical to AC0109-Ca_UGS_gt0_zzb0_dup0_indel0_clu7_tag0 but kept for subsequent analysis
+NOTE: AC0133-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0 is identical to AC0112-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0 but kept for subsequent analysis
+NOTE: AC0202-Cb_UGS_gt0_zzb1_dup0_indel1_clu9_tag0 is identical to AC0113-Cb_UGS_gt0_zzb1_dup1_indel1_clu9_tag0 but kept for subsequent analysis
+NOTE: AC0178-Ca_UGS_gt0_zzb0_dup0_indel0_clu10_tag0 is identical to AC0114-Ca_UGS_gt0_zzb1_dup1_indel1_clu10_tag0 but kept for subsequent analysis
+NOTE: AC0152-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0 is identical to AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0 but kept for subsequent analysis
+NOTE: AC0156-Ca_UGS_gt0_zzb1_dup1_indel1_clu24_tag0 is identical to AC0135-Cb_UGS_gt0_zzb1_dup1_indel1_clu24_tag0 but kept for subsequent analysis
+NOTE: 158 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: AC0091-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0091-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0092-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0092-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0093-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0094-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0095-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0095-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0096-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0097-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0098-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0099-Ca_UGS_gt1_zzb2_dup0_indel2_clu3_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0099-Cb_UGS_gt1_zzb2_dup0_indel2_clu4_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0100-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0100-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0101-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0102-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0103-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0104-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0106-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0107-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0108-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0110-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0110-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0112-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0113-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0114-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0115-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0118-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0119-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0120-Ca_UGS_gt1_zzb1_dup1_indel1_clu17_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0121-Ca_UGS_gt1_zzb2_dup0_indel2_clu19_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0121-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0123-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0124-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0125-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0125-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0126-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0126-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0128-Ca_UGS_gt1_zzb2_dup0_indel2_clu22_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0128-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0129-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0131-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0132-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0133-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0135-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0136-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0136-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0138-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0138-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0139-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0139-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0142-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0142-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0143-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0143-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0144-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0144-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0145-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0147-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0148-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0148-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0149-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0151-Cb_UGS_gt1_zzb1_dup1_indel1_clu30_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0152-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0153-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0156-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0159-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0159-Cb_UGS_gt1_zzb2_dup0_indel2_clu19_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0160-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0161-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0162-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0163-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0164-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0166-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0166-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0167-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0168-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0168-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0170-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0171-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0171-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0172-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0172-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0173-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0173-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0174-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0176-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0180-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0181-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0181-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0183-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0183-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0184-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0186-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0187-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0187-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0188-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0189-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0190-Cb_UGS_gt1_zzb2_dup3_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0191-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0191-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0193-Ca_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0193-Cb_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0194-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0195-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0196-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0197-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0197-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0199-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0199-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0200-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0201-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0202-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0203-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0203-Cb_UGS_gt1_zzb2_dup1_indel2_clu19_tag1 (identical to AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0096-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0101-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0102-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0106-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0107-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0109-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0111-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0116-Cb_UGS_gt0_zzb1_dup0_indel1_clu13_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0122-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0123-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0124-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0127-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0129-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0130-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0131-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0132-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0140-Ca_UGS_gt0_zzb1_dup2_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0147-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0149-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0153-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0154-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0163-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0164-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0167-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0169-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0178-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0180-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0189-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0192-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0195-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0201-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0174-Cb_UGS_gt0_zzb1_dup1_indel1_clu33_tag0 (identical to AC0097-Cb_UGS_gt0_zzb1_dup1_indel1_clu2_tag0) is ignored but added at the end
+NOTE: AC0192-Cb_UGS_gt0_zzb0_dup0_indel0_clu7_tag0 (identical to AC0109-Ca_UGS_gt0_zzb0_dup0_indel0_clu7_tag0) is ignored but added at the end
+NOTE: AC0145-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0 (identical to AC0112-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0) is ignored but added at the end
+NOTE: AC0194-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0 (identical to AC0112-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0) is ignored but added at the end
+NOTE: AC0154-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0 (identical to AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0) is ignored but added at the end
+NOTE: AC0160-Cb_UGS_gt0_zzb1_dup1_indel1_clu21_tag0 (identical to AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0) is ignored but added at the end
+NOTE: AC0176-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0 (identical to AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0) is ignored but added at the end
+NOTE: AC0179-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0 (identical to AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0) is ignored but added at the end
+NOTE: AC0200-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0 (identical to AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to iqr_corehap.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+NOTE: ModelFinder requires 4 MB RAM!
+ModelFinder will test 2 DNA models (sample size: 582) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+Ascertainment bias correction: 4 unobservable constant patterns
+  1  GTR+F+ASC     8825.093     101 17852.186    17895.111    18293.199
+Ascertainment bias correction: 4 unobservable constant patterns
+  2  GTR+F+ASC+G4  8736.409     102 17676.819    17720.685    18122.199
+Akaike Information Criterion:           GTR+F+ASC+G4
+Corrected Akaike Information Criterion: GTR+F+ASC+G4
+Bayesian Information Criterion:         GTR+F+ASC+G4
+Best-fit model: GTR+F+ASC+G4 chosen according to BIC
+
+All model information printed to iqr_corehap.model.gz
+CPU time for ModelFinder: 0.588 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.151 seconds (0h:0m:0s)
+Generating 1000 samples for ultrafast bootstrap (seed: 459327)...
+Ascertainment bias correction: 4 unobservable constant patterns
+
+NOTE: 4 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -9290.828
+2. Current log-likelihood: -8741.148
+3. Current log-likelihood: -8737.888
+4. Current log-likelihood: -8736.778
+5. Current log-likelihood: -8736.489
+Optimal log-likelihood: -8736.411
+Rate parameters:  A-C: 0.62767  A-G: 4.06690  A-T: 2.43484  C-G: 0.43033  C-T: 3.79418  G-T: 1.00000
+Base frequencies:  A: 0.190  C: 0.295  G: 0.311  T: 0.203
+Gamma shape alpha: 1.525
+Parameters optimization took 5 rounds (0.083 sec)
+Computing ML distances based on estimated model parameters... 0.011 sec
+Computing BIONJ tree...
+0.001 seconds
+Log-likelihood of BIONJ tree: -8765.402
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.303 second
+Computing log-likelihood of 98 initial trees ... 0.458 seconds
+Current best score: -8685.249
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -8678.490
+Iteration 10 / LogL: -8687.429 / Time: 0h:0m:1s
+Iteration 20 / LogL: -8694.641 / Time: 0h:0m:1s
+Finish initializing candidate tree set (15)
+Current best tree score: -8678.490 / CPU time: 1.690
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25: -8678.085
+BETTER TREE FOUND at iteration 29: -8678.084
+Iteration 30 / LogL: -8680.130 / Time: 0h:0m:2s (0h:0m:8s left)
+UPDATE BEST LOG-LIKELIHOOD: -8678.084
+Iteration 40 / LogL: -8800.643 / Time: 0h:0m:3s (0h:0m:7s left)
+UPDATE BEST LOG-LIKELIHOOD: -8678.084
+Iteration 50 / LogL: -8819.301 / Time: 0h:0m:3s (0h:0m:5s left)
+Log-likelihood cutoff on original alignment: -8728.757
+UPDATE BEST LOG-LIKELIHOOD: -8678.084
+UPDATE BEST LOG-LIKELIHOOD: -8678.084
+Iteration 60 / LogL: -8678.084 / Time: 0h:0m:4s (0h:0m:5s left)
+Iteration 70 / LogL: -8678.084 / Time: 0h:0m:5s (0h:0m:4s left)
+UPDATE BEST LOG-LIKELIHOOD: -8678.083
+UPDATE BEST LOG-LIKELIHOOD: -8678.083
+Iteration 80 / LogL: -8678.083 / Time: 0h:0m:5s (0h:0m:3s left)
+UPDATE BEST LOG-LIKELIHOOD: -8678.082
+Iteration 90 / LogL: -8678.085 / Time: 0h:0m:6s (0h:0m:2s left)
+Iteration 100 / LogL: -8678.083 / Time: 0h:0m:6s (0h:0m:2s left)
+Log-likelihood cutoff on original alignment: -8728.757
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+Iteration 110 / LogL: -8680.128 / Time: 0h:0m:7s (0h:0m:6s left)
+UPDATE BEST LOG-LIKELIHOOD: -8678.082
+BETTER TREE FOUND at iteration 114: -8678.082
+UPDATE BEST LOG-LIKELIHOOD: -8678.082
+Iteration 120 / LogL: -8678.083 / Time: 0h:0m:8s (0h:0m:6s left)
+UPDATE BEST LOG-LIKELIHOOD: -8678.082
+Iteration 130 / LogL: -8678.082 / Time: 0h:0m:8s (0h:0m:5s left)
+Iteration 140 / LogL: -8678.082 / Time: 0h:0m:9s (0h:0m:5s left)
+Iteration 150 / LogL: -8678.501 / Time: 0h:0m:10s (0h:0m:4s left)
+Log-likelihood cutoff on original alignment: -8728.757
+UPDATE BEST LOG-LIKELIHOOD: -8678.082
+Iteration 160 / LogL: -8703.665 / Time: 0h:0m:10s (0h:0m:3s left)
+Iteration 170 / LogL: -8678.121 / Time: 0h:0m:11s (0h:0m:2s left)
+UPDATE BEST LOG-LIKELIHOOD: -8678.082
+Iteration 180 / LogL: -8687.724 / Time: 0h:0m:12s (0h:0m:2s left)
+UPDATE BEST LOG-LIKELIHOOD: -8678.082
+Iteration 190 / LogL: -8678.082 / Time: 0h:0m:12s (0h:0m:1s left)
+Iteration 200 / LogL: -8678.502 / Time: 0h:0m:13s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -8728.757
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+Iteration 210 / LogL: -8678.082 / Time: 0h:0m:13s (0h:0m:6s left)
+TREE SEARCH COMPLETED AFTER 215 ITERATIONS / Time: 0h:0m:14s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -8678.082
+Optimal log-likelihood: -8678.081
+Rate parameters:  A-C: 0.64161  A-G: 4.16844  A-T: 2.52597  C-G: 0.44845  C-T: 3.97198  G-T: 1.00000
+Base frequencies:  A: 0.190  C: 0.295  G: 0.311  T: 0.203
+Gamma shape alpha: 1.593
+Parameters optimization took 1 rounds (0.007 sec)
+BEST SCORE FOUND : -8678.081
+Creating bootstrap support values...
+Split supports printed to NEXUS file iqr_corehap.splits.nex
+Total tree length: 3.230
+
+Total number of iterations: 215
+CPU time used for tree search: 56.268 sec (0h:0m:56s)
+Wall-clock time used for tree search: 14.195 sec (0h:0m:14s)
+Total CPU time used: 57.050 sec (0h:0m:57s)
+Total wall-clock time used: 14.394 sec (0h:0m:14s)
+
+Computing bootstrap consensus tree...
+Reading input file iqr_corehap.splits.nex...
+48 taxa and 284 splits.
+Consensus tree written to iqr_corehap.contree
+Reading input trees file iqr_corehap.contree
+Log-likelihood of consensus tree: -8688.374
+
+Analysis results written to: 
+  IQ-TREE report:                iqr_corehap.iqtree
+  Maximum-likelihood tree:       iqr_corehap.treefile
+  Likelihood distances:          iqr_corehap.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          iqr_corehap.splits.nex
+  Consensus tree:                iqr_corehap.contree
+  Screen log file:               iqr_corehap.log
+
+Date and Time: Tue Aug 27 13:01:09 2019
