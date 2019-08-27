@@ -11,7 +11,8 @@ Outputs are in these folders:
 Default cluster names are not very informative -- here's what they actually are:
 
 * `cluster_0`: a cluster of UGS haplotypes carrying duplications, ZZB, P4 mutations etc.
-* `cluster_1`: a wt cluster of UGS haplotypes, that doesn't have any interesting mutation 
-* `cluster_no`: all other haplotypes are put in this group
+* `cluster_1`: a wt cluster of UGS haplotypes, that doesn't have any interesting mutation
+* `cluster_no_wt`: all other wt haplotypes with less than 1% frequency in UGS are put in this group
+* `cluster_no_alt`: all other non-wt haplotypes  with less than 1% frequency in UGS are put in this group
 
 All other folders and files are used for input/metadata/etc.
