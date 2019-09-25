@@ -1,0 +1,132 @@
+Data:
+* Samples     =  103
+* Populations =  {'UGS'}
+population
+UGS    103
+dtype: int64
+Variants phased...
+(11332701,)
+Genotypes phased...
+(11332701, 103, 2)
+Expand phase haplotypes...
+(11332701, 206)
+Cast sample metadata...
+(103, 3)
+Cast sample metadata...
+(206, 3)
+Population dict...
+Population dict phased...
+Species dict...
+Species dict phased...
+Genotypes phased to allele counts (population)...
+(11332701,)
+Haplotypes phased to allele counts (population)...
+(11332701,)
+Filters phased...
+(2738740, 103, 2) / (11332701, 103, 2)
+in loci:                     621
+in loci, nonsyn and min frq: 43
+Load accessibility array...
+Minor allele freqs...
+LD Rogers & Huff...
+LD Lewontin D'...
+Is 28497967 centre in phased array? True: index 6809110 
+Phased variants and samples around 28497967: (1046, 206)
+total haps: 206
+num haps per cluster (only clusters n>=10):
+hap_cluster
+0    113
+1     35
+dtype: int64
+centre 28497967 print clusters: [0 1] 		size of clusters:  [113  35]
+centre 28497967 print clusters total size: 148 / 206
+centre 28497967 print EHH for clusters: [0 1] 		size of clusters:  [113  35]
+EHH cluster_0
+EHH cluster_1
+EHH cluster_no_wt
+EHH cluster_no_alt
+cluster_0
+h = 0.052623 +/- 0.002819 SE, 0.049582-0.053089 CI95, n=113
+cluster_1
+h = 0.166387 +/- 0.015469 SE, 0.115865-0.171123 CI95, n=35
+cluster_no_wt
+h = 0.963002 +/- 0.002353 SE, 0.961240-0.967885 CI95, n=44
+cluster_no_alt
+h = 0.505495 +/- 0.052125 SE, 0.423077-0.538462 CI95, n=14
+Retain...
+Garud H cluster_0 - chr...
+Hap div cluster_0 - chr...
+Plots   cluster_0...
+Garud H cluster_1 - chr...
+Hap div cluster_1 - chr...
+Plots   cluster_1...
+Garud H cluster_no_wt - chr...
+Hap div cluster_no_wt - chr...
+Plots   cluster_no_wt...
+Garud H cluster_no_alt - chr...
+Hap div cluster_no_alt - chr...
+Plots   cluster_no_alt...
+Locus: 1046 vars, cluster cluster_0
+Hap div cluster_0 	 = 0.385904 +/- 0.005512 SE, 0.374839-0.388835 CI95, n=113
+H12 cluster_0     	 = 0.769147 +/- 0.005126 SE, 0.767219-0.782844 CI95, n=113
+H2H1 cluster_0    	 = 0.017914 +/- 0.000899 SE, 0.015259-0.018288 CI95, n=113
+Locus: 1046 vars, cluster cluster_1
+Hap div cluster_1 	 = 0.448739 +/- 0.018977 SE, 0.415330-0.459893 CI95, n=35
+H12 cluster_1     	 = 0.691696 +/- 0.018257 SE, 0.683391-0.731834 CI95, n=35
+H2H1 cluster_1    	 = 0.022138 +/- 0.002596 SE, 0.014577-0.023438 CI95, n=35
+Locus: 1046 vars, cluster cluster_no_wt
+Hap div cluster_no_wt 	 = 0.987315 +/- 0.000986 SE, 0.986711-0.990033 CI95, n=44
+H12 cluster_no_wt     	 = 0.044102 +/- 0.001536 SE, 0.039481-0.044889 CI95, n=44
+H2H1 cluster_no_wt    	 = 0.767487 +/- 0.027062 SE, 0.753846-0.852459 CI95, n=44
+Locus: 1046 vars, cluster cluster_no_alt
+Hap div cluster_no_alt 	 = 0.934066 +/- 0.017375 SE, 0.923077-0.961538 CI95, n=14
+H12 cluster_no_alt     	 = 0.181741 +/- 0.021385 SE, 0.147929-0.195266 CI95, n=14
+H2H1 cluster_no_alt    	 = 0.407519 +/- 0.075134 SE, 0.360000-0.526316 CI95, n=14
+pi_n cluster_0 	 = 2.959E-06 +/- 1.699E-07 SE, 2.836E-06-2.985E-06 CI95, n=113
+pi_s cluster_0 	 = 1.479E-06 +/- 9.840E-08 SE, 1.493E-06-1.493E-06 CI95, n=113
+r_n_s cluster_0	 = 2.004E+00 +/- 1.051E-01 SE, 2.000E+00-2.000E+00 CI95, n=113
+pi_n cluster_1 	 = 2.388E-06 +/- 4.096E-07 SE, 2.090E-06-2.458E-06 CI95, n=35
+pi_s cluster_1 	 = 2.388E-06 +/- 4.096E-07 SE, 2.090E-06-2.458E-06 CI95, n=35
+r_n_s cluster_1	 = 1.000E+00 +/- 0.000E+00 SE, 1.000E+00-1.000E+00 CI95, n=34
+pi_n cluster_no_wt 	 = 3.837E-03 +/- 1.335E-05 SE, 3.811E-03-3.861E-03 CI95, n=44
+pi_s cluster_no_wt 	 = 2.786E-03 +/- 1.059E-05 SE, 2.761E-03-2.800E-03 CI95, n=44
+r_n_s cluster_no_wt	 = 1.378E+00 +/- 2.108E-03 SE, 1.374E+00-1.381E+00 CI95, n=44
+pi_n cluster_no_alt 	 = 5.405E-04 +/- 6.602E-05 SE, 3.923E-04-5.765E-04 CI95, n=14
+pi_s cluster_no_alt 	 = 4.041E-04 +/- 4.792E-05 SE, 3.003E-04-4.308E-04 CI95, n=14
+r_n_s cluster_no_alt	 = 1.337E+00 +/- 1.661E-02 SE, 1.299E+00-1.356E+00 CI95, n=14
+extra mutations: (103, 4)
+(624, 103)
+LD Rogers & Huff...
+zzb 2
+dup 0
+indel 2
+['2R:28491424 AGAP002865-RA ']
+[0.9749238]
+['2R:28491424 AGAP002865-RA ']
+[0.9749238]
+loc (621, 206) (621,)
+0 / 206
+20 / 206
+40 / 206
+60 / 206
+80 / 206
+100 / 206
+120 / 206
+140 / 206
+160 / 206
+180 / 206
+200 / 206
+205 / 206
+loc1e5 (7296, 206) (7296,)
+0 / 206
+20 / 206
+40 / 206
+60 / 206
+80 / 206
+100 / 206
+120 / 206
+140 / 206
+160 / 206
+180 / 206
+200 / 206
+205 / 206

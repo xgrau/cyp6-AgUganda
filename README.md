@@ -6,9 +6,11 @@ Haplotype analyses of the CYP6 cluster in *Anopheles gambiae* samples from Ugand
 
 Outputs are in these folders:
 
-* `haplotype_analysis_28jun19.html` or `.ipynb`: python notebooks with code & analyses
-* `haplotype_analysis_output`: all figures and tables related to the haplotype cluster and positive selection analyses.
+* `haplotype_analysis_25set19_CYP6P4_I236M.py`: python script to carry out analyses
+* `haplotype_analysis_output_CYP6P4_I236M`: all figures and tables related to the haplotype cluster and positive selection analyses.
 * `haplotype_phylogeny`: phylogenies of haplotypes using variants in the cluster (using IQTREE). Results in newick (`.treefile`) & pdf.
+
+Linkage disequilibrium analyses are carried out across the entire CYP6 cluster, but haplotype clustering and downstream analyses are specific to the CYP6P4 gene (`I236M` allele +/- 2000bp ).
 
 Default cluster names are not very informative -- here's what they actually are:
 

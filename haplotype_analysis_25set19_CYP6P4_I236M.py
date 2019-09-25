@@ -3,7 +3,7 @@
 
 # Config:
 # output
-outdir   = "haplotype_analysis_output_singleton_fixed"
+outdir   = "haplotype_analysis_output_CYP6P4_I236M"
 outcode  = "cyp6_UGS"
 popc     = "population"
 # gene of interest
@@ -13,15 +13,15 @@ loc_start = 28480576   # start gene
 loc_end   = 28505816   # end gene
 loc_p4    = 28497967   # polarizing mutation: I236M CYP6P4
 # retain all variants between these coordinates
-ret_start  = 0  
+ret_start  = 0
 ret_end    = 100e6
 # min frq to retain minor allele
 minfrq     = 0.05
 # input data phase1
 oc_metasam_fn = "/home/xavi/dades/Variation/phase1.AR3/samples/samples.meta.txt"
-oc_hapcall_fn = "/home/xavi/dades/Variation/phase1.AR3/haplotypes/main/hdf5/ag1000g.phase1.ar3.haplotypes.2R.h5" 
-oc_effcall_fn = "/home/xavi/dades/Variation/phase1.AR3/variation/zarr/ag1000g.phase1.ar3.pass/2R/" 
-oc_accessi_fn = "/home/xavi/dades/Variation/phase1.AR3/accessibility/accessibility.h5"    
+oc_hapcall_fn = "/home/xavi/dades/Variation/phase1.AR3/haplotypes/main/hdf5/ag1000g.phase1.ar3.haplotypes.2R.h5"
+oc_effcall_fn = "/home/xavi/dades/Variation/phase1.AR3/variation/zarr/ag1000g.phase1.ar3.pass/2R/"
+oc_accessi_fn = "/home/xavi/dades/Variation/phase1.AR3/accessibility/accessibility.h5"
 oc_popc       = popc
 #oc_popl       = ["BFS","CMS","GAS","GNS","CMS","UGS","AOM","BFM","GWA","KES"]
 oc_popl       = ["UGS"]
@@ -91,7 +91,7 @@ oc_samples.reset_index(drop=True, inplace=True)
 
 # indexed dictionary of populations
 oc_popdict = dict()
-for popi in oc_popl: 
+for popi in oc_popl:
     oc_popdict[popi]  = oc_samples[oc_samples[oc_popc] == popi].index.tolist()
 
 # add an extra population composed of all other locations
@@ -112,25 +112,23 @@ oc_hapcall   = h5py.File(oc_hapcall_fn)
 # variants of genotypes
 print("Variants phased...")
 oc_hapcall_var = oc_hapcall[chrom]["variants"]
-oc_hapvars = allel.VariantChunkedTable(oc_hapcall_var,names=["POS","REF","ALT"],index="POS") 
+oc_hapvars = allel.VariantChunkedTable(oc_hapcall_var,names=["POS","REF","ALT"],index="POS")
 print(oc_hapvars.shape)
 # genotype data
 print("Genotypes phased...")
 oc_hapcall_hap = oc_hapcall[chrom]["calldata"]["genotype"]
-oc_haploty     = allel.GenotypeChunkedArray(oc_hapcall_hap) 
+oc_haploty     = allel.GenotypeChunkedArray(oc_hapcall_hap)
 oc_haploty     = oc_haploty.subset(sel1=oc_samples_bool)
 print(oc_haploty.shape)
 
 
 # Effects:
-
-
 oc_effcall     = zarr.open(oc_effcall_fn)
 oc_effvars     = allel.VariantChunkedTable(oc_effcall["variants"],names=[
     "POS","REF","ALT","ANN_HGVS_p","ANN_HGVS_c",
     "ANN_Annotation","ANN_AA_pos","ANN_CDS_pos",
     "ANN_Feature_ID","ANN_Gene_ID","ANN_Gene_Name"
-],index="POS") 
+],index="POS")
 
 
 # Is effect among phased variants?
@@ -184,7 +182,7 @@ print(oc_sampleh.shape)
 # Dictionaries of populations and species:
 print("Population dict...")
 oc_popdict = dict()
-for popi in oc_popl: 
+for popi in oc_popl:
     oc_popdict[popi]  = oc_samples[oc_samples["population"] == popi].index.tolist()
 oc_popdict["all"] = []
 for popi in oc_popl:
@@ -192,7 +190,7 @@ for popi in oc_popl:
 
 print("Population dict phased...")
 oc_popdich = dict()
-for popi in oc_popl: 
+for popi in oc_popl:
     oc_popdich[popi]  = oc_sampleh[oc_sampleh["population"] == popi].index.tolist()
 oc_popdich["all"] = []
 for popi in oc_popl:
@@ -200,12 +198,12 @@ for popi in oc_popl:
 
 print("Species dict...")
 oc_spsdict = dict()
-for spsi in oc_spsl: 
+for spsi in oc_spsl:
     oc_spsdict[spsi]  = oc_samples[oc_samples["species"] == spsi].index.tolist()
-    
+
 print("Species dict phased...")
 oc_spsdich = dict()
-for spsi in oc_spsl: 
+for spsi in oc_spsl:
     oc_spsdich[spsi]  = oc_sampleh[oc_sampleh["species"] == spsi].index.tolist()
 
 
@@ -258,12 +256,12 @@ oc_snpname_seg = np.array(
 
 
 # Retain min frequency and location
-# Is variant above certain minimum frequency? 
+# Is variant above certain minimum frequency?
 # allele counts table per pop
-co_major = pd.DataFrame() 
+co_major = pd.DataFrame()
 co_minor = pd.DataFrame()
 fq_minor = pd.DataFrame()
-for popi in oc_popl: 
+for popi in oc_popl:
     co_major[popi] = oc_hapalco_pop_seg[popi][:,0]
     co_minor[popi] = oc_hapalco_pop_seg[popi][:,1]
     fq_minor[popi] = oc_hapalco_pop_seg[popi][:,1] / oc_hapalco_pop_seg[popi][:,0:2].sum(axis=1)
@@ -424,8 +422,8 @@ def lewontin_d_prime_varloop(h):
 # LD calculations:
 # lewontin D' linkage disequilibrium
 print("LD Lewontin D'...")
-ld_lewdp = lewontin_d_prime_varloop(h=oc_haploty_seg.compress(is_report).to_n_alt(fill=-1))     
-# plot 
+ld_lewdp = lewontin_d_prime_varloop(h=oc_haploty_seg.compress(is_report).to_n_alt(fill=-1))
+# plot
 pdf = PdfPages("%s/%s_%s.allele_ld_LewD.pdf" % (outdir,outcode,l_nom))
 fig = plt.figure(figsize=(16,14))
 np.fill_diagonal(ld_lewdp,np.nan)
@@ -442,7 +440,7 @@ ld_lewdp_df.to_csv("%s/%s_%s.allele_ld_lewdp.csv" % (outdir,outcode,l_nom),sep="
 
 
 # Haplotype networks
-# 
+#
 # Visualize haplotype similarity with **haplotype networks**, built from phased variants around the `I236M CYP6P4` mutation.
 
 
@@ -492,7 +490,7 @@ loc_colvar = np.array([var_colors[p] for p in loc_gty_T])
 
 loc_graph, loc_distinct_sets, loc_components = hapclust.graph_haplotype_network(
     h=loc_hap,
-    max_dist=max_dist,   
+    max_dist=max_dist,
     max_allele=max_alle, # for MJN only; default is 3
     show_node_labels=min_fc_h,
     distance_metric='hamming',network_method=net_meth,
@@ -512,7 +510,7 @@ loc_graph.render(fn,cleanup=True)
 # map hap clusters with REF alleles to actual lists of populations
 # BEWARE: identify_components fails if max_dist > 1 in MJN
 def identify_components(h_distinct_sets, components):
-    """This function is designed to collect all indices for original haplotypes 
+    """This function is designed to collect all indices for original haplotypes
     within each connected component. I.e., it finds clusters from the network."""
     clusters = []
     for c in np.unique(components):
@@ -522,7 +520,7 @@ def identify_components(h_distinct_sets, components):
         clusters.append(sorted(cluster))
     return clusters
 
-loc_components_id      = identify_components(loc_distinct_sets, loc_components) 
+loc_components_id      = identify_components(loc_distinct_sets, loc_components)
 loc_components_id_hapi = []
 loc_components_id_clui = []
 loc_components_id_dati = pd.DataFrame()
@@ -547,7 +545,7 @@ print(loc_components_id_dati.groupby(("hap_cluster")).size()[loc_components_id_d
 
 
 min_cluster_size = min_fc_h
-    
+
 # select clusters
 clu_list_ids     = np.unique(loc_components_id_dati["hap_cluster"],return_counts=True)[0]
 clu_list_cou     = np.unique(loc_components_id_dati["hap_cluster"],return_counts=True)[1]
@@ -562,7 +560,7 @@ print(loc_varn,loc_vari,"print clusters total size:",sum(loc_printhap),"/",len(l
 
 loc_graph, loc_distinct_sets, loc_components = hapclust.graph_haplotype_network(
     h=loc_hap.subset(sel1=loc_printhap),
-    max_dist=max_dist,   
+    max_dist=max_dist,
     max_allele=max_alle, # for MJN only; default is 3
     show_node_labels=100,
     distance_metric='hamming',network_method=net_meth,
@@ -579,7 +577,7 @@ loc_graph.render(fn,cleanup=True)
 
 
 # Plot haplotype networks colored by genotype in CYP6P4-I236M:
-# 
+#
 # * 236I (wt) is gray (0)
 # * 236M is light blue (1)
 # * missing genotype is orange (-1)
@@ -591,7 +589,7 @@ loc_components_id_dati["CYP6P4_nonsyn"] = loc_gty_T
 
 loc_graph, loc_distinct_sets, loc_components = hapclust.graph_haplotype_network(
     h=loc_hap.subset(sel1=loc_printhap),
-    max_dist=max_dist,   
+    max_dist=max_dist,
     max_allele=max_alle, # for MJN only; default is 3
     show_node_labels=100,
     distance_metric='hamming',network_method=net_meth,
@@ -626,7 +624,7 @@ loc_components_id_dati.to_csv("%s/%s_%s.hn_result.csv" % (outdir,outcode,l_nom),
 
 
 # Distribution of populations per haplotype
-# 
+#
 # Barplots:
 
 
@@ -648,7 +646,7 @@ for i,clui in enumerate(clu_list_ids_fil):
 
     fig = plt.figure(figsize=(8,1))
     plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.8, hspace=None)
-    
+
     # and now: some barplots with pop composition of each cluster
     ax1 = plt.subplot(1, 2, 1)
     hap_labl = "Pop composition, cluster "+str(clui)+" n="+str(clu_list_cou_fil[i])
@@ -674,7 +672,7 @@ for i,clui in enumerate(clu_list_ids_fil):
     ax2.set_xlim(0,100)
 
     pdf.savefig(fig,bbox_inches='tight')
-    
+
 pdf.close()
 
 
@@ -682,9 +680,9 @@ pdf.close()
 pdf = PdfPages("%s/%s_%s.hn_popcomp_perpop.pdf" % (outdir,outcode,l_nom))
 
 for popi in oc_popl:
-    
+
     fig = plt.figure(figsize=(2,2))
-    
+
     ax2 = plt.subplot(1, 1, 1)
 
     hap_popi = loc_components_id_dati["hap_cluster"][loc_components_id_dati["pop"] == popi]
@@ -695,19 +693,19 @@ for popi in oc_popl:
     ax2.pie(pie_coub,labels=pie_labb, autopct="%1.1f%%")
     plt.title(pie_titl)
     pdf.savefig(fig,bbox_inches='tight')
-    
+
 pdf.close()
 
 
 # Selection signals in clusters
-# 
-# We want to see if the resistance haplotypes defined above have positive selection. 
-# 
+#
+# We want to see if the resistance haplotypes defined above have positive selection.
+#
 # In this analysis, we include clusters those with resistance alleles (cluster 4 is 296G, cluster 34 is 296S):
 
 
 min_cluster_size = 10
-    
+
 # select clusters
 clu_list_ids     = np.unique(loc_components_id_dati["hap_cluster"],return_counts=True)[0]
 clu_list_cou     = np.unique(loc_components_id_dati["hap_cluster"],return_counts=True)[1]
@@ -724,18 +722,18 @@ print(loc_varn,loc_vari,"print EHH for clusters:",clu_list_ids_fil,"\t\tsize of 
 # create hap dictionary: similar to pop dict, but for associations hap-cluster
 popdich_clu = dict()
 # populate dict of interest
-for clui in clu_list_ids_fil: 
+for clui in clu_list_ids_fil:
     clu_key = "cluster_"+str(clui)
     popdich_clu[clu_key] = [oc_sampleh["ox_code"].values.tolist().index(i) for i in loc_components_id_dati["hap_id"].values[loc_components_id_dati["hap_cluster"]==clui]]
 
 # populate dict with all other wt samples
 popdich_clu["cluster_no_wt"] = []
-for clui in clu_list_ids[np.logical_and(clu_list_cou < min_cluster_size , clu_list_gty == 0)]: 
+for clui in clu_list_ids[np.logical_and(clu_list_cou < min_cluster_size , clu_list_gty == 0)]:
     popdich_clu["cluster_no_wt"] = popdich_clu["cluster_no_wt"] + [oc_sampleh["ox_code"].values.tolist().index(i) for i in loc_components_id_dati["hap_id"].values[loc_components_id_dati["hap_cluster"]==clui]]
 
 # populate dict with non-clustered non-wt samples
 popdich_clu["cluster_no_alt"] = []
-for clui in clu_list_ids[np.logical_and(clu_list_cou < min_cluster_size , clu_list_gty == 1)]: 
+for clui in clu_list_ids[np.logical_and(clu_list_cou < min_cluster_size , clu_list_gty == 1)]:
     popdich_clu["cluster_no_alt"] = popdich_clu["cluster_no_alt"] + [oc_sampleh["ox_code"].values.tolist().index(i) for i in loc_components_id_dati["hap_id"].values[loc_components_id_dati["hap_cluster"]==clui]]
 
 oc_hapalco_hap_clu_seg = oc_haploty_hap_seg.count_alleles_subpops(subpops=popdich_clu)
@@ -776,7 +774,7 @@ for i,clui in enumerate(np.append(clu_list_ids_fil,np.append("no_wt","no_alt")))
     # which variants include in the cluster-wise analysis of selection?
     clu_sambool = np.isin(range(0,oc_haploty_hap_seg.n_haplotypes),test_elements=popdich_clu[clu_key])
     clu_sambool = np.logical_and(clu_sambool,rmv_miss_bool)
-    
+
     # calculate actual EHH
     clu_ehh_up_i = allel.ehh_decay(h=oc_haploty_hap_seg.subset(sel0=clu_varbool_up,sel1=clu_sambool))
     clu_ehh_do_i = allel.ehh_decay(h=oc_haploty_hap_seg.subset(sel0=clu_varbool_do,sel1=clu_sambool))
@@ -789,11 +787,11 @@ for i,clui in enumerate(np.append(clu_list_ids_fil,np.append("no_wt","no_alt")))
 
     # lab is data
     clu_lab    = "%s, n=%i, a=%.3f\nEHH>%.2f: %i bp %i-%i\nEHH<%.2f: %i bp %i-%i" % (
-        clu_key, len(popdich_clu[clu_key]),clu_ehh_i_ar, 
+        clu_key, len(popdich_clu[clu_key]),clu_ehh_i_ar,
         ehh_above_thr, ehh_above_end-ehh_above_start, ehh_above_start, ehh_above_end,
         ehh_below_thr, ehh_below_end-ehh_below_start, ehh_below_start, ehh_below_end
     )
-    
+
     # plot EHH background & foreground
     ax3.plot(clu_ehh_pos/1e6,clu_ehh_i,color=colors[i],label=clu_lab,mfc='none')
 
@@ -861,7 +859,7 @@ for i,clui in enumerate(np.append(clu_list_ids_fil,np.append("no_wt","no_alt")))
     # hap div along chromosome
     clu_pos_wib    = allel.stats.moving_statistic(oc_hapvars_seg["POS"].subset(sel0=clu_varbool), statistic=lambda v: v[0], size=50, step=10)
     clu_hdi_wib    = allel.moving_haplotype_diversity(oc_haploty_hap_seg.subset(sel0=clu_varbool,sel1=clu_sambool), size=50, step=10)
-    
+
     # hap div in focus region
     j_index = np.array(popdich_clu[clu_key]).tolist()
     j_run = len(j_index)
@@ -876,7 +874,7 @@ for i,clui in enumerate(np.append(clu_list_ids_fil,np.append("no_wt","no_alt")))
     # plot
     plt.subplot(3, 1, 1)
     plt.step(clu_pos_wib/1e6, clu_hdi_wib, color=colors[j], label=clu_label)
-    
+
     # next color
     j=j+1
 
@@ -899,7 +897,7 @@ pdf.close()
 # Calculate sequence divergence (Dxy) between cluster 0 and cluster 1:
 
 # Garud H
-# 
+#
 # Compute **Garud H** for each cluster, along the entire chromosome, to see landscape:
 
 
@@ -943,11 +941,11 @@ ax3.set_xlabel("Mb")
 ax3.set_ylabel("H")
 
 for i,clui in enumerate(np.append(clu_list_ids_fil,np.append("no_wt","no_alt"))):
-    
+
     # which variants include in the cluster-wise analysis of selection?
     clu_key     = "cluster_"+str(clui)
     clu_sambool = np.isin(range(0,oc_haploty_hap_seg.n_haplotypes),test_elements=popdich_clu[clu_key])
-        
+
     # selection: Garud's H
     print("Garud H %s - chr..." % clu_key)
     clu_gah_wib = allel.moving_garud_h(oc_haploty_hap_seg.subset(sel1=popdich_clu[clu_key]), size=block_len_hap, step=step_len_hap)
@@ -955,12 +953,12 @@ for i,clui in enumerate(np.append(clu_list_ids_fil,np.append("no_wt","no_alt")))
     # haplotype diversity
     print("Hap div %s - chr..." % clu_key)
     clu_hdi_wib = allel.moving_haplotype_diversity(oc_haploty_hap_seg.subset(sel1=popdich_clu[clu_key]), size=block_len_hap, step=step_len_hap)
-    
+
     print("Plots   %s..." % clu_key)
     # plot H12
     plt.subplot(3, 1, 1)
     plt.step(clu_pos_wib/1e6, clu_gah_wib[1], color=colors[i], label=clu_key)
-        
+
     # plot H2H1
     plt.subplot(3, 1, 3)
     plt.step(clu_pos_wib/1e6, clu_gah_wib[3], color=colors[i])
@@ -987,11 +985,11 @@ pdf.close()
 
 
 # Calculate selection statistics in the loci of interest
-# 
+#
 # Zoom into Rdl locus or core haplotype and recalculate local Garud H and haplotype diversity, with jack-knifing of samples.
-# 
+#
 # * **jack-knifing**: remove one sample (specimen) at a time without replacement and recalculate the statistic $n$ times ($n$=number of samples in each group, which will vary according to each haplotype cluster). This is the appropiate procedure for haplotype similarity statistics: the iterative removal of samples can both increase or decrease the statistic, which makes it a good measure of the robustness of the estimate. This is as opposed to a **bootstraps**, because when you resample with replacement you'll introduce duplicated samples taht will result in an upwards bias for statistics that measure haplotype similarity.
-# 
+#
 # Selection statistics within core haplotype:
 
 
@@ -1002,7 +1000,7 @@ for i,clui in enumerate(np.append(clu_list_ids_fil,np.append("no_wt","no_alt")))
     # cluster key
     clu_key     = "cluster_"+str(clui)
     print("Locus: %i vars, cluster %s" % (sum(clu_varbool),clu_key))
-    
+
     # haplotype diversity
     j_run = len(popdich_clu[clu_key])
     j_hdi = np.zeros(shape=j_run)
@@ -1024,7 +1022,7 @@ for i,clui in enumerate(np.append(clu_list_ids_fil,np.append("no_wt","no_alt")))
     j_av,j_se,j_cl,j_cu,j_nu = mean_se_ci_report(j_h12)
     print("H12 %s     \t = %.6f +/- %.6f SE, %.6f-%.6f CI95, n=%i" % (clu_key, j_av, j_se, j_cl, j_cu, j_nu))
     j_av,j_se,j_cl,j_cu,j_nu = mean_se_ci_report(j_h2h1)
-    print("H2H1 %s    \t = %.6f +/- %.6f SE, %.6f-%.6f CI95, n=%i" % (clu_key, j_av, j_se, j_cl, j_cu, j_nu))    
+    print("H2H1 %s    \t = %.6f +/- %.6f SE, %.6f-%.6f CI95, n=%i" % (clu_key, j_av, j_se, j_cl, j_cu, j_nu))
 
 
 # A useful but unused function to calculate bootstraps:
@@ -1040,7 +1038,7 @@ for i,clui in enumerate(np.append(clu_list_ids_fil,np.append("no_wt","no_alt")))
 
 
 # Sequence diversity
-# 
+#
 # Sequence diversity in each haplotype group:
 
 
@@ -1070,20 +1068,14 @@ for popi in ["cluster_0","cluster_1","cluster_no_wt","cluster_no_alt"]:
     print("pi_s %s \t = %.3E +/- %.3E SE, %.3E-%.3E CI95, n=%i" % (popi, j_av, j_se, j_cl, j_cu, j_nu))
     j_av,j_se,j_cl,j_cu,j_nu = mean_se_ci_report(j_pi_n_s)
     print("r_n_s %s\t = %.3E +/- %.3E SE, %.3E-%.3E CI95, n=%i" % (popi, j_av, j_se, j_cl, j_cu, j_nu))
-                    
+
 
 
 # Can we phase additional mutations?
-# 
 # If we find variants that are in high linkage disequilibrium with specimens that are 0 or 2 for the P4 mutation, we can use them to infer whether a particular haplotype has ZZB, dups, or indels.
-# 
 # First, load info of extra mutations:
-
-
 kary_df = pd.read_csv(kary_fn, sep='\t')
 print("extra mutations:",kary_df.shape)
-
-
 
 oc_haploty_seg_loci_extramut = np.vstack(
     (np.transpose(kary_df)[1:4],
@@ -1099,10 +1091,7 @@ ld_rhr_extramut = allel.rogers_huff_r(oc_haploty_seg_loci_extramut)
 ld_rhr_extramut = squareform(ld_rhr_extramut)
 np.fill_diagonal(ld_rhr_extramut,np.nan)
 
-
 # Are any of them in high linkage disequilibrium with the extra mutations?
-
-
 ld_threshold = 0.97 ## I choose this threshold so as to obtain just one variant.
 is_ld_zzb    = ld_rhr_extramut[0] >= ld_threshold
 is_ld_dup    = ld_rhr_extramut[1] >= ld_threshold
@@ -1113,38 +1102,26 @@ print("zzb",sum(is_ld_zzb))
 print("dup",sum(is_ld_dup))
 print("indel",sum(is_ld_indel))
 
-
 # Which ones? For ZZB:
-
-
 print(oc_snpname_seg[is_in_loci][is_ld_zzb[3:]])
 print(ld_rhr_extramut[0][is_ld_zzb][1:])
 
-
 # For the indel:
-
-
 print(oc_snpname_seg[is_in_loci][is_ld_indel[3:]])
 print(ld_rhr_extramut[2][is_ld_indel][1:])
 
 
-# So we conclude that we can use `2R:28491424` as the tagging variant for the ZZB insertion and for the small deletion (but there are no variants linked to the duplication). 
-# 
+# So we conclude that we can use `2R:28491424` as the tagging variant for the ZZB insertion and for the small deletion (but there are no variants linked to the duplication).
 # Where is it?
-
-
 is_tagvar   = oc_hapvars_seg["POS"] == 28491424
 loc_gty_tag = oc_haploty_hap_seg.subset(sel0=is_tagvar)
 np.unique(is_tagvar, return_counts=True)
 
 
 # Export FASTA
-# 
 # We create a haplotype-level table with key genotypes:
-
-
 kary_df_hap = pd.DataFrame(data={
-    "ox_code" : list(itertools.chain(*[[ s + 'a', s + 'b'] for s in kary_df["ox_code"].values.tolist()])),    
+    "ox_code" : list(itertools.chain(*[[ s + 'a', s + 'b'] for s in kary_df["ox_code"].values.tolist()])),
     "zzb"     : list(itertools.chain(*[[ s      , s      ] for s in kary_df["zzb"].values.tolist()])),
     "dupaa1"  : list(itertools.chain(*[[ s      , s      ] for s in kary_df["dupaa1"].values.tolist()])),
     "indel"   : list(itertools.chain(*[[ s      , s      ] for s in kary_df["indel"].values.tolist()])),
@@ -1155,34 +1132,28 @@ kary_df_hap.shape
 
 
 # Retrieve genotype of P4 allele:
-
-
 oc_sampleh["P4_allele"] = loc_gty_T.astype(str)
 
 
 # Create alignment dataframe:
-
-
 happhy = pd.DataFrame({
     "hap": ">"+oc_sampleh["ox_code"]+"_"+oc_sampleh["population"]+"_gt"+oc_sampleh["P4_allele"]+
     "_zzb"+kary_df_hap["zzb"].astype(str)+"_dup"+kary_df_hap["dupaa1"].astype(str)+"_indel"+kary_df_hap["indel"].astype(str)+
     "_clu"+loc_components_id_dati["hap_cluster"].values.astype(str)+"_tag"+kary_df_hap["tagvar"].astype(str),
-    "seq": np.nan},    
+    "seq": np.nan},
     columns=["hap", "seq"])
 happhy.head()
 
 
 # FASTA cluster:
-
-
-export_name        = "loc" 
+export_name        = "loc"
 loc_varbool        = np.logical_and(oc_hapvars_seg["POS"][:] >= loc_start, oc_hapvars_seg["POS"][:] <= loc_end)
 fa_haploty_hap_seg = oc_haploty_hap_seg.compress(loc_varbool)
 fa_hapvars_seg     = oc_hapvars_seg.compress(loc_varbool)
 print(export_name,fa_haploty_hap_seg.shape, fa_hapvars_seg.shape)
 
 for pn,popi in enumerate(oc_sampleh["ox_code"]):
-    
+
     if pn % int(happhy.shape[0]/10) == 0 : print(pn,"/",happhy.shape[0])
     popi_gen = np.ndarray.tolist(fa_haploty_hap_seg[:,pn])
     popi_seq = [fa_hapvars_seg["REF"][gn].astype(str) if gei == 0 else fa_hapvars_seg["ALT"][gn].astype(str) for gn,gei in enumerate(popi_gen)]
@@ -1191,21 +1162,19 @@ for pn,popi in enumerate(oc_sampleh["ox_code"]):
 print(pn,"/",happhy.shape[0])
 happhy.to_csv("%s/%s_%s.alig_%s.fasta" % (outdir,outcode,l_nom,export_name),sep="\n",index=False, header=False)
 pd.DataFrame({
-    "POS" : oc_hapvars_seg["POS"].subset(loc_varbool)[:]  
+    "POS" : oc_hapvars_seg["POS"].subset(loc_varbool)[:]
 }).to_csv("%s/%s_%s.alig_%s.pos" % (outdir,outcode,l_nom,export_name),sep="\n",index=False, header=False)
 
 
 # FASTA wider region:
-
-
-export_name        = "loc1e5" 
+export_name        = "loc1e5"
 loc_varbool        = np.logical_and(oc_hapvars_seg["POS"][:] >= loc_start-1e5, oc_hapvars_seg["POS"][:] <= loc_end+1e5)
 fa_haploty_hap_seg = oc_haploty_hap_seg.compress(loc_varbool)
 fa_hapvars_seg     = oc_hapvars_seg.compress(loc_varbool)
 print(export_name,fa_haploty_hap_seg.shape, fa_hapvars_seg.shape)
 
 for pn,popi in enumerate(oc_sampleh["ox_code"]):
-    
+
     if pn % int(happhy.shape[0]/10) == 0 : print(pn,"/",happhy.shape[0])
     popi_gen = np.ndarray.tolist(fa_haploty_hap_seg[:,pn])
     popi_seq = [fa_hapvars_seg["REF"][gn].astype(str) if gei == 0 else fa_hapvars_seg["ALT"][gn].astype(str) for gn,gei in enumerate(popi_gen)]
@@ -1214,7 +1183,7 @@ for pn,popi in enumerate(oc_sampleh["ox_code"]):
 print(pn,"/",happhy.shape[0])
 happhy.to_csv("%s/%s_%s.alig_%s.fasta" % (outdir,outcode,l_nom,export_name),sep="\n",index=False, header=False)
 pd.DataFrame({
-    "POS" : oc_hapvars_seg["POS"].subset(loc_varbool)[:]  
+    "POS" : oc_hapvars_seg["POS"].subset(loc_varbool)[:]
 }).to_csv("%s/%s_%s.alig_%s.pos" % (outdir,outcode,l_nom,export_name),sep="\n",index=False, header=False)
 
 
