@@ -2,6 +2,14 @@
 
 Haplotype analyses of the CYP6 cluster in *Anopheles gambiae* samples from Uganda (UGS), using Ag1000G Phase 1 data.
 
+## Input
+
+Download Ag1000G Phase 1 data from here
+
+```bash
+ftp://ngs.sanger.ac.uk/production/ag1000g/phase1/AR3
+```
+
 ## Output
 
 Outputs are in these folders:
@@ -10,7 +18,7 @@ Outputs are in these folders:
 * `haplotype_analysis_output_CYP6P4_I236M`: all figures and tables related to the haplotype cluster and positive selection analyses.
 * `haplotype_phylogeny`: phylogenies of haplotypes using variants in the cluster (using IQTREE). Results in newick (`.treefile`) & pdf.
 
-Linkage disequilibrium analyses are carried out across the entire CYP6 cluster, but haplotype clustering and downstream analyses are specific to the CYP6P4 gene (`I236M` allele +/- 2000bp ).
+Linkage disequilibrium analyses are carried out across the entire CYP6 cluster, but haplotype clustering and downstream analyses are specific to the *CYP6P4* gene (*I236M* allele +/- 2000bp ).
 
 Default cluster names are not very informative -- here's what they actually are:
 
@@ -21,10 +29,193 @@ Default cluster names are not very informative -- here's what they actually are:
 
 All other folders and files are used for input/metadata/etc.
 
-## Input
+## Results
 
-Download Ag1000G Phase 1 data from here
+### Phylogeny
 
+#### Main cluster
+
+Phylogeny shows a cluster of swept haplotypes (coincident with the cluster identified in haplotype clustering analysis, `cluster0`). It has strong signals of selection. It contains the following genotypes:
+
+* all sequences have the *I236M* mutation
+* all sequences have the *zzb* transposon OR come from genomes that have it (het)
+* all sequences have the *indel* OR come from genomes that have it (het)
+* it contains sequences from specimens with and without *duplication* (including duplicated homozygotes).
+
+Therefore, the selective sweep occurred **after** the *I236M*, *zzb* insertion and indels; but **before** the duplication occurred. This is consistent with the late emergence of the duplication (2009) relative to other mutations (*zzb* in 2004, *I236M* in 2005).
+
+```bash
+0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+AC0187-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0108-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0181-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0119-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0112-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0159-Cb_UGS_gt1_zzb2_dup0_indel2_clu19_tag1
+AC0125-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0148-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0171-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0173-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0174-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0181-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0149-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0153-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0138-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0203-Cb_UGS_gt1_zzb2_dup1_indel2_clu19_tag1
+AC0197-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0125-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0167-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0173-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0100-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0104-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0197-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0184-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0091-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+AC0156-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0136-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0103-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0138-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0168-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0196-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0202-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0143-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0200-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1
+AC0132-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0110-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0128-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+AC0172-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0170-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0160-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0152-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0091-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+AC0115-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0107-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0095-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0191-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0145-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0129-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0201-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0133-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0106-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0166-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0190-Cb_UGS_gt1_zzb2_dup3_indel2_clu0_tag1
+AC0183-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0139-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0131-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0193-Cb_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1
+AC0194-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0102-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0159-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+AC0098-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0189-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0191-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0143-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0171-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0144-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0164-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0093-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0118-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0199-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0172-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0180-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0123-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1
+AC0113-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0195-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0114-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0147-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0163-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0099-Cb_UGS_gt1_zzb2_dup0_indel2_clu4_tag1
+AC0183-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0142-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0176-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0135-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0148-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0126-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0142-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0144-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0101-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0139-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0110-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0187-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0099-Ca_UGS_gt1_zzb2_dup0_indel2_clu3_tag1
+AC0124-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0092-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0193-Ca_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1
+AC0166-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0097-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0121-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+AC0095-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0162-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0199-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0096-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0161-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0120-Ca_UGS_gt1_zzb1_dup1_indel1_clu17_tag1
+AC0121-Ca_UGS_gt1_zzb2_dup0_indel2_clu19_tag1
+AC0128-Ca_UGS_gt1_zzb2_dup0_indel2_clu22_tag1
+AC0168-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0092-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+AC0203-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0136-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0126-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0100-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0188-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+AC0094-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0151-Cb_UGS_gt1_zzb1_dup1_indel1_clu30_tag1
+AC0186-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0090-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+AC0098-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+AC0140-Cb_UGS_gt1_zzb1_dup2_indel1_clu0_tag1
+AC0190-Ca_UGS_gt1_zzb2_dup3_indel2_clu0_tag1
+AC0116-Ca_UGS_gt1_zzb1_dup0_indel1_clu12_tag1
 ```
-ftp://ngs.sanger.ac.uk/production/ag1000g/phase1/AR3
+
+#### Secondary clusters
+
+There is a second cluster of highly similar haplotypes that do not have the *I236M* mutation (`cluster1`). This cluster has signals of selection, and the following genotypes:
+
+* no *I236M* mutation
+* mostly from specimens that are heterozygous for the *indel* and *zzb*, with some coming from specimens that don't have indels or zzb.
+* mostly from specimens *without duplication*, with some coming from het specimens.
+
+Most of these haplotypes come from the same specimens that have swept haplotypes (main cluster, above); albeit not all of them (`**`).
+
+```bash
+AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0153-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0201-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0127-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0 **
+AC0101-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0106-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0111-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0189-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0164-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0195-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0149-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0109-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0 **
+AC0147-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0180-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0096-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0132-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0163-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0116-Cb_UGS_gt0_zzb1_dup0_indel1_clu13_tag0
+AC0140-Ca_UGS_gt0_zzb1_dup2_indel1_clu1_tag0
+AC0102-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0130-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0 **
+AC0129-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0178-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0 **
+AC0131-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0154-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 **** Third cluster?
+AC0123-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0122-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0124-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0169-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0167-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0192-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0 **
+AC0107-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0094-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+AC0118-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+AC0182-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0 **
+AC0188-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
 ```

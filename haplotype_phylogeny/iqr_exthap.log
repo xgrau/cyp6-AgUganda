@@ -1,0 +1,453 @@
+IQ-TREE multicore version 1.6.10 for Linux 64-bit built Feb 19 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    monolit (AVX512, FMA3, 62 GB RAM)
+Command: iqtree -s cyp6_UGS_cyp6.alig_loc1e5.fasta -nt 6 -m TEST+ASC -mset GTR -pre iqr_exthap -bb 1000 -nm 10000 -cptime 3600
+Seed:    596904 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jan 29 11:25:13 2020
+Kernel:  AVX+FMA - 6 threads (12 CPU cores detected)
+
+Reading alignment file cyp6_UGS_cyp6.alig_loc1e5.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 206 sequences with 7296 columns, 5884 distinct patterns
+7296 parsimony-informative, 0 singleton sites, 0 constant sites
+                                               Gap/Ambiguity  Composition  p-value
+   1  AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     99.61%
+   2  AC0090-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     93.89%
+   3  AC0091-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     99.02%
+   4  AC0091-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     99.59%
+   5  AC0092-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.05%
+   6  AC0092-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.60%
+   7  AC0093-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.44%
+   8  AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.23%
+   9  AC0094-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.23%
+  10  AC0094-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.38%
+  11  AC0095-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     98.45%
+  12  AC0095-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     94.44%
+  13  AC0096-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     93.48%
+  14  AC0096-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     98.71%
+  15  AC0097-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     98.68%
+  16  AC0097-Cb_UGS_gt0_zzb1_dup1_indel1_clu2_tag0     0.00%    passed     74.65%
+  17  AC0098-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.10%
+  18  AC0098-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     97.15%
+  19  AC0099-Ca_UGS_gt1_zzb2_dup0_indel2_clu3_tag1     0.00%    passed     99.88%
+  20  AC0099-Cb_UGS_gt1_zzb2_dup0_indel2_clu4_tag1     0.00%    passed     95.24%
+  21  AC0100-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.59%
+  22  AC0100-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     52.78%
+  23  AC0101-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.61%
+  24  AC0101-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     98.95%
+  25  AC0102-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.23%
+  26  AC0102-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.64%
+  27  AC0103-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     73.39%
+  28  AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.49%
+  29  AC0104-Ca_UGS_gt0_zzb1_dup1_indel1_clu5_tag0     0.00%    passed     97.24%
+  30  AC0104-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.87%
+  31  AC0106-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.53%
+  32  AC0106-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.23%
+  33  AC0107-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.43%
+  34  AC0107-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     71.65%
+  35  AC0108-Ca_UGS_gt1_zzb2_dup1_indel2_clu6_tag1     0.00%    passed     83.89%
+  36  AC0108-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     90.14%
+  37  AC0109-Ca_UGS_gt0_zzb0_dup0_indel0_clu7_tag0     0.00%    passed     99.24%
+  38  AC0109-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     94.37%
+  39  AC0110-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.17%
+  40  AC0110-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.67%
+  41  AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.35%
+  42  AC0111-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.24%
+  43  AC0112-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.13%
+  44  AC0112-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0     0.00%    passed     94.70%
+  45  AC0113-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.95%
+  46  AC0113-Cb_UGS_gt0_zzb1_dup1_indel1_clu9_tag0     0.00%    passed     92.56%
+  47  AC0114-Ca_UGS_gt0_zzb1_dup1_indel1_clu10_tag0    0.00%    passed     86.70%
+  48  AC0114-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.27%
+  49  AC0115-Ca_UGS_gt0_zzb1_dup0_indel1_clu11_tag0    0.00%    passed     92.73%
+  50  AC0115-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.44%
+  51  AC0116-Ca_UGS_gt1_zzb1_dup0_indel1_clu12_tag1    0.00%    passed     75.05%
+  52  AC0116-Cb_UGS_gt0_zzb1_dup0_indel1_clu13_tag0    0.00%    passed     86.16%
+  53  AC0117-Ca_UGS_gt0_zzb1_dup0_indel1_clu14_tag1    0.00%    passed     84.65%
+  54  AC0117-Cb_UGS_gt0_zzb1_dup0_indel1_clu15_tag0    0.00%    passed     83.26%
+  55  AC0118-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.91%
+  56  AC0118-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     98.90%
+  57  AC0119-Ca_UGS_gt0_zzb1_dup0_indel1_clu16_tag0    0.00%    passed     99.10%
+  58  AC0119-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     89.67%
+  59  AC0120-Ca_UGS_gt1_zzb1_dup1_indel1_clu17_tag1    0.00%    passed     70.95%
+  60  AC0120-Cb_UGS_gt0_zzb1_dup1_indel1_clu18_tag0    0.00%    passed     82.48%
+  61  AC0121-Ca_UGS_gt1_zzb2_dup0_indel2_clu19_tag1    0.00%    passed     84.99%
+  62  AC0121-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     93.38%
+  63  AC0122-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     98.99%
+  64  AC0122-Cb_UGS_gt1_zzb1_dup0_indel1_clu20_tag1    0.00%    passed     70.20%
+  65  AC0123-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     98.50%
+  66  AC0123-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1    0.00%    passed     97.47%
+  67  AC0124-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.93%
+  68  AC0124-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.46%
+  69  AC0125-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.94%
+  70  AC0125-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     96.33%
+  71  AC0126-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.34%
+  72  AC0126-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     98.86%
+  73  AC0127-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     97.17%
+  74  AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0    0.00%    passed     96.49%
+  75  AC0128-Ca_UGS_gt1_zzb2_dup0_indel2_clu22_tag1    0.00%    passed     78.81%
+  76  AC0128-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     97.62%
+  77  AC0129-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.44%
+  78  AC0129-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.19%
+  79  AC0130-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     98.44%
+  80  AC0130-Cb_UGS_gt0_zzb0_dup0_indel0_clu23_tag0    0.00%    passed     75.58%
+  81  AC0131-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     98.78%
+  82  AC0131-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.95%
+  83  AC0132-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.23%
+  84  AC0132-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     98.86%
+  85  AC0133-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.17%
+  86  AC0133-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0     0.00%    passed     94.66%
+  87  AC0135-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.83%
+  88  AC0135-Cb_UGS_gt0_zzb1_dup1_indel1_clu24_tag0    0.00%    passed     94.08%
+  89  AC0136-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.34%
+  90  AC0136-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.05%
+  91  AC0137-Ca_UGS_gt0_zzb1_dup0_indel1_clu25_tag0    0.00%    passed     55.32%
+  92  AC0137-Cb_UGS_gt1_zzb1_dup0_indel1_clu26_tag1    0.00%    passed     58.86%
+  93  AC0138-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.39%
+  94  AC0138-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.35%
+  95  AC0139-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.35%
+  96  AC0139-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.29%
+  97  AC0140-Ca_UGS_gt0_zzb1_dup2_indel1_clu1_tag0     0.00%    passed     73.56%
+  98  AC0140-Cb_UGS_gt1_zzb1_dup2_indel1_clu0_tag1     0.00%    passed     67.02%
+  99  AC0142-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.49%
+ 100  AC0142-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.59%
+ 101  AC0143-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.49%
+ 102  AC0143-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.35%
+ 103  AC0144-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     58.89%
+ 104  AC0144-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     91.93%
+ 105  AC0145-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0     0.00%    passed     94.66%
+ 106  AC0145-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.24%
+ 107  AC0147-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.49%
+ 108  AC0147-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.59%
+ 109  AC0148-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.49%
+ 110  AC0148-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     98.86%
+ 111  AC0149-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     59.93%
+ 112  AC0149-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     55.56%
+ 113  AC0150-Ca_UGS_gt0_zzb1_dup1_indel1_clu27_tag0    0.00%    passed     44.48%
+ 114  AC0150-Cb_UGS_gt0_zzb1_dup1_indel1_clu28_tag0    0.00%    passed     28.69%
+ 115  AC0151-Ca_UGS_gt0_zzb1_dup1_indel1_clu29_tag0    0.00%    passed     92.05%
+ 116  AC0151-Cb_UGS_gt1_zzb1_dup1_indel1_clu30_tag1    0.00%    passed     77.59%
+ 117  AC0152-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     95.70%
+ 118  AC0152-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0    0.00%    passed     82.03%
+ 119  AC0153-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     96.69%
+ 120  AC0153-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     98.61%
+ 121  AC0154-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0    0.00%    passed     94.59%
+ 122  AC0154-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     97.14%
+ 123  AC0156-Ca_UGS_gt0_zzb1_dup1_indel1_clu24_tag0    0.00%    passed     85.72%
+ 124  AC0156-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     97.26%
+ 125  AC0158-Ca_UGS_gt0_zzb0_dup0_indel0_clu31_tag0    0.00%    passed     98.82%
+ 126  AC0158-Cb_UGS_gt0_zzb0_dup0_indel0_clu32_tag0    0.00%    passed     83.68%
+ 127  AC0159-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1     0.00%    passed     99.53%
+ 128  AC0159-Cb_UGS_gt1_zzb2_dup0_indel2_clu19_tag1    0.00%    passed     98.06%
+ 129  AC0160-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.29%
+ 130  AC0160-Cb_UGS_gt0_zzb1_dup1_indel1_clu21_tag0    0.00%    passed     77.05%
+ 131  AC0161-Ca_UGS_gt0_zzb1_dup0_indel1_clu33_tag0    0.00%    passed     84.71%
+ 132  AC0161-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     97.74%
+ 133  AC0162-Ca_UGS_gt0_zzb1_dup1_indel1_clu34_tag0    0.00%    passed     70.83%
+ 134  AC0162-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     44.29%
+ 135  AC0163-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.68%
+ 136  AC0163-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     83.99%
+ 137  AC0164-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.28%
+ 138  AC0164-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.37%
+ 139  AC0166-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.17%
+ 140  AC0166-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.04%
+ 141  AC0167-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.41%
+ 142  AC0167-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.49%
+ 143  AC0168-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     97.20%
+ 144  AC0168-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.19%
+ 145  AC0169-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.63%
+ 146  AC0169-Cb_UGS_gt0_zzb1_dup1_indel1_clu35_tag1    0.00%    passed     27.52%
+ 147  AC0170-Ca_UGS_gt0_zzb1_dup0_indel1_clu36_tag0    0.00%    passed     91.17%
+ 148  AC0170-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.74%
+ 149  AC0171-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.06%
+ 150  AC0171-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.35%
+ 151  AC0172-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.29%
+ 152  AC0172-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.60%
+ 153  AC0173-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.34%
+ 154  AC0173-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     97.41%
+ 155  AC0174-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     97.25%
+ 156  AC0174-Cb_UGS_gt0_zzb1_dup1_indel1_clu33_tag0    0.00%    passed     58.14%
+ 157  AC0176-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.29%
+ 158  AC0176-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0    0.00%    passed     78.96%
+ 159  AC0178-Ca_UGS_gt0_zzb0_dup0_indel0_clu10_tag0    0.00%    passed     74.86%
+ 160  AC0178-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     98.99%
+ 161  AC0179-Ca_UGS_gt0_zzb0_dup0_indel0_clu37_tag0    0.00%    passed     60.10%
+ 162  AC0179-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0    0.00%    passed     79.72%
+ 163  AC0180-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     98.11%
+ 164  AC0180-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.40%
+ 165  AC0181-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.46%
+ 166  AC0181-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     96.44%
+ 167  AC0182-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     91.65%
+ 168  AC0182-Cb_UGS_gt0_zzb0_dup0_indel0_clu38_tag0    0.00%    passed     87.63%
+ 169  AC0183-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.35%
+ 170  AC0183-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.65%
+ 171  AC0184-Ca_UGS_gt0_zzb1_dup1_indel1_clu39_tag0    0.00%    passed     76.30%
+ 172  AC0184-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     45.99%
+ 173  AC0186-Ca_UGS_gt0_zzb1_dup0_indel1_clu7_tag0     0.00%    passed     96.36%
+ 174  AC0186-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.49%
+ 175  AC0187-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.22%
+ 176  AC0187-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1     0.00%    passed     99.13%
+ 177  AC0188-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.29%
+ 178  AC0188-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.55%
+ 179  AC0189-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     98.72%
+ 180  AC0189-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.83%
+ 181  AC0190-Ca_UGS_gt1_zzb2_dup3_indel2_clu0_tag1     0.00%    passed     99.43%
+ 182  AC0190-Cb_UGS_gt1_zzb2_dup3_indel2_clu0_tag1     0.00%    passed     99.35%
+ 183  AC0191-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.43%
+ 184  AC0191-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.33%
+ 185  AC0192-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0     0.00%    passed     99.24%
+ 186  AC0192-Cb_UGS_gt0_zzb0_dup0_indel0_clu7_tag0     0.00%    passed     98.65%
+ 187  AC0193-Ca_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1    0.00%    passed     99.22%
+ 188  AC0193-Cb_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1    0.00%    passed     92.74%
+ 189  AC0194-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0     0.00%    passed     89.69%
+ 190  AC0194-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     70.46%
+ 191  AC0195-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     99.58%
+ 192  AC0195-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0     0.00%    passed     99.86%
+ 193  AC0196-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1     0.00%    passed     98.21%
+ 194  AC0196-Cb_UGS_gt0_zzb1_dup1_indel1_clu40_tag0    0.00%    passed     57.38%
+ 195  AC0197-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.35%
+ 196  AC0197-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     98.68%
+ 197  AC0199-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     93.73%
+ 198  AC0199-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.19%
+ 199  AC0200-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0    0.00%    passed     81.20%
+ 200  AC0200-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1    0.00%    passed     96.63%
+ 201  AC0201-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0     0.00%    passed     99.41%
+ 202  AC0201-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     99.49%
+ 203  AC0202-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1     0.00%    passed     98.92%
+ 204  AC0202-Cb_UGS_gt0_zzb1_dup0_indel1_clu9_tag0     0.00%    passed     88.46%
+ 205  AC0203-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1     0.00%    passed     99.27%
+ 206  AC0203-Cb_UGS_gt1_zzb2_dup1_indel2_clu19_tag1    0.00%    passed     83.72%
+****  TOTAL                                            0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: AC0136-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 is identical to AC0092-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 but kept for subsequent analysis
+NOTE: AC0102-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 is identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 but kept for subsequent analysis
+NOTE: AC0142-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 is identical to AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 but kept for subsequent analysis
+NOTE: AC0138-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 is identical to AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 but kept for subsequent analysis
+NOTE: AC0173-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 is identical to AC0136-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 but kept for subsequent analysis
+NOTE: AC0188-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1 is identical to AC0139-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 but kept for subsequent analysis
+NOTE: 14 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: AC0106-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0132-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0 (identical to AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0) is ignored but added at the end
+NOTE: AC0143-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0147-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0148-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0167-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0186-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0201-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1 (identical to AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1) is ignored but added at the end
+NOTE: AC0139-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1) is ignored but added at the end
+NOTE: AC0143-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1) is ignored but added at the end
+NOTE: AC0171-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1 (identical to AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1) is ignored but added at the end
+NOTE: AC0183-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1) is ignored but added at the end
+NOTE: AC0190-Cb_UGS_gt1_zzb2_dup3_indel2_clu0_tag1 (identical to AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1) is ignored but added at the end
+NOTE: AC0197-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1 (identical to AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to iqr_exthap.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.142 seconds
+NOTE: ModelFinder requires 169 MB RAM!
+ModelFinder will test 2 DNA models (sample size: 7296) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+Ascertainment bias correction: 4 unobservable constant patterns
+  1  GTR+F+ASC     209913.313   389 420604.625   420648.561   423286.812
+Ascertainment bias correction: 4 unobservable constant patterns
+  2  GTR+F+ASC+G4  204526.950   390 409833.900   409878.068   412522.982
+Akaike Information Criterion:           GTR+F+ASC+G4
+Corrected Akaike Information Criterion: GTR+F+ASC+G4
+Bayesian Information Criterion:         GTR+F+ASC+G4
+Best-fit model: GTR+F+ASC+G4 chosen according to BIC
+
+All model information printed to iqr_exthap.model.gz
+CPU time for ModelFinder: 33.520 seconds (0h:0m:33s)
+Wall-clock time for ModelFinder: 5.745 seconds (0h:0m:5s)
+Generating 1000 samples for ultrafast bootstrap (seed: 596904)...
+Ascertainment bias correction: 4 unobservable constant patterns
+
+NOTE: 169 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -214297.045
+2. Current log-likelihood: -205853.845
+3. Current log-likelihood: -204528.027
+4. Current log-likelihood: -204527.051
+Optimal log-likelihood: -204526.974
+Rate parameters:  A-C: 0.88545  A-G: 3.86828  A-T: 2.35539  C-G: 0.46847  C-T: 3.89564  G-T: 1.00000
+Base frequencies:  A: 0.215  C: 0.278  G: 0.286  T: 0.221
+Gamma shape alpha: 1.305
+Parameters optimization took 4 rounds (4.150 sec)
+Computing ML distances based on estimated model parameters... 4.681 sec
+Computing BIONJ tree...
+0.015 seconds
+Log-likelihood of BIONJ tree: -207198.145
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 14.940 second
+Computing log-likelihood of 98 initial trees ... 12.705 seconds
+Current best score: -203729.929
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -203650.866
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -203379.901
+Iteration 10 / LogL: -203805.366 / Time: 0h:0m:58s
+Iteration 20 / LogL: -204091.511 / Time: 0h:1m:22s
+Finish initializing candidate tree set (20)
+Current best tree score: -203379.901 / CPU time: 76.726
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -203574.457 / Time: 0h:1m:47s (0h:4m:28s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 39: -203209.852
+Iteration 40 / LogL: -203397.771 / Time: 0h:2m:12s (0h:5m:35s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 44: -203070.155
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 49: -203039.889
+Iteration 50 / LogL: -204224.231 / Time: 0h:2m:38s (0h:5m:19s left)
+Log-likelihood cutoff on original alignment: -203682.308
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 54: -203038.038
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 55: -203036.134
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 56: -203029.490
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 58: -202997.937
+Iteration 60 / LogL: -203049.887 / Time: 0h:3m:5s (0h:5m:8s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 61: -202997.181
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 65: -202978.300
+Iteration 70 / LogL: -202998.482 / Time: 0h:3m:30s (0h:4m:49s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 75: -202977.553
+Iteration 80 / LogL: -203040.759 / Time: 0h:3m:52s (0h:4m:39s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 87: -202977.530
+Iteration 90 / LogL: -203203.232 / Time: 0h:4m:12s (0h:4m:34s left)
+Iteration 100 / LogL: -203257.672 / Time: 0h:4m:30s (0h:3m:57s left)
+Log-likelihood cutoff on original alignment: -203086.518
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.854
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -203042.029 / Time: 0h:4m:52s (0h:4m:1s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 112: -202976.220
+Iteration 120 / LogL: -204229.654 / Time: 0h:5m:13s (0h:4m:2s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 121: -202976.121
+Iteration 130 / LogL: -203004.574 / Time: 0h:5m:35s (0h:3m:56s left)
+Iteration 140 / LogL: -204847.019 / Time: 0h:5m:55s (0h:3m:27s left)
+Iteration 150 / LogL: -203158.521 / Time: 0h:6m:12s (0h:2m:57s left)
+Log-likelihood cutoff on original alignment: -203086.518
+Iteration 160 / LogL: -203012.421 / Time: 0h:6m:33s (0h:2m:30s left)
+Iteration 170 / LogL: -202978.511 / Time: 0h:6m:54s (0h:2m:5s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 172: -202975.109
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 175: -202974.885
+Iteration 180 / LogL: -203025.872 / Time: 0h:7m:16s (0h:3m:51s left)
+Iteration 190 / LogL: -202974.919 / Time: 0h:7m:37s (0h:3m:25s left)
+Iteration 200 / LogL: -202978.491 / Time: 0h:8m:0s (0h:3m:1s left)
+Log-likelihood cutoff on original alignment: -203086.518
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.986
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 210 / LogL: -203314.791 / Time: 0h:8m:21s (0h:3m:36s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 215: -202973.169
+Iteration 220 / LogL: -203087.131 / Time: 0h:8m:42s (0h:3m:46s left)
+Iteration 230 / LogL: -202986.610 / Time: 0h:9m:2s (0h:3m:21s left)
+Iteration 240 / LogL: -203410.024 / Time: 0h:9m:21s (0h:2m:56s left)
+Iteration 250 / LogL: -203001.549 / Time: 0h:9m:43s (0h:2m:32s left)
+Log-likelihood cutoff on original alignment: -203087.054
+Iteration 260 / LogL: -203245.451 / Time: 0h:10m:4s (0h:2m:8s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 266: -202973.143
+Iteration 270 / LogL: -203026.747 / Time: 0h:10m:26s (0h:3m:43s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 280: -202971.587
+Iteration 280 / LogL: -202971.587 / Time: 0h:10m:48s (0h:3m:52s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 281: -202971.354
+Iteration 290 / LogL: -202999.113 / Time: 0h:11m:13s (0h:3m:32s left)
+Iteration 300 / LogL: -204163.839 / Time: 0h:11m:35s (0h:3m:8s left)
+Log-likelihood cutoff on original alignment: -203087.054
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.987
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 310 / LogL: -202973.718 / Time: 0h:11m:56s (0h:3m:28s left)
+Iteration 320 / LogL: -203762.707 / Time: 0h:12m:17s (0h:3m:4s left)
+Iteration 330 / LogL: -203003.692 / Time: 0h:12m:41s (0h:2m:42s left)
+Iteration 340 / LogL: -202981.390 / Time: 0h:13m:3s (0h:2m:18s left)
+Iteration 350 / LogL: -203240.812 / Time: 0h:13m:23s (0h:1m:55s left)
+Log-likelihood cutoff on original alignment: -203087.054
+Iteration 360 / LogL: -202982.817 / Time: 0h:13m:44s (0h:1m:31s left)
+Iteration 370 / LogL: -202973.965 / Time: 0h:14m:5s (0h:1m:8s left)
+Iteration 380 / LogL: -203072.963 / Time: 0h:14m:26s (0h:0m:45s left)
+Iteration 390 / LogL: -203172.811 / Time: 0h:14m:48s (0h:0m:22s left)
+Iteration 400 / LogL: -202996.849 / Time: 0h:15m:8s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -203087.054
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.983
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 410 / LogL: -203013.029 / Time: 0h:15m:30s (0h:3m:24s left)
+Iteration 420 / LogL: -202977.240 / Time: 0h:15m:49s (0h:3m:1s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 428: -202971.298
+Iteration 430 / LogL: -203103.868 / Time: 0h:16m:13s (0h:3m:42s left)
+Iteration 440 / LogL: -203194.075 / Time: 0h:16m:32s (0h:3m:19s left)
+Iteration 450 / LogL: -202995.331 / Time: 0h:16m:54s (0h:2m:56s left)
+Log-likelihood cutoff on original alignment: -203087.054
+Iteration 460 / LogL: -203079.123 / Time: 0h:17m:15s (0h:2m:33s left)
+Iteration 470 / LogL: -203253.312 / Time: 0h:17m:37s (0h:2m:10s left)
+Iteration 480 / LogL: -202994.640 / Time: 0h:17m:57s (0h:1m:48s left)
+Iteration 490 / LogL: -203093.177 / Time: 0h:18m:19s (0h:1m:25s left)
+BETTER TREE FOUND at iteration 493: -202971.294
+Iteration 500 / LogL: -203221.861 / Time: 0h:18m:42s (0h:3m:29s left)
+Log-likelihood cutoff on original alignment: -203087.054
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.979
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 510 / LogL: -202973.341 / Time: 0h:19m:5s (0h:3m:22s left)
+Iteration 520 / LogL: -204781.803 / Time: 0h:19m:25s (0h:2m:59s left)
+Iteration 530 / LogL: -202983.477 / Time: 0h:19m:46s (0h:2m:36s left)
+Iteration 540 / LogL: -203025.735 / Time: 0h:20m:6s (0h:2m:14s left)
+Iteration 550 / LogL: -202984.452 / Time: 0h:20m:28s (0h:1m:51s left)
+Log-likelihood cutoff on original alignment: -203087.054
+Iteration 560 / LogL: -202983.845 / Time: 0h:20m:49s (0h:1m:29s left)
+Iteration 570 / LogL: -203245.172 / Time: 0h:21m:9s (0h:1m:6s left)
+Iteration 580 / LogL: -202998.641 / Time: 0h:21m:33s (0h:0m:44s left)
+Iteration 590 / LogL: -203019.233 / Time: 0h:21m:56s (0h:0m:22s left)
+Iteration 600 / LogL: -204119.973 / Time: 0h:22m:17s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -203087.054
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.983
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 610 / LogL: -203286.829 / Time: 0h:22m:39s (0h:3m:20s left)
+Iteration 620 / LogL: -203013.145 / Time: 0h:23m:3s (0h:2m:58s left)
+Iteration 630 / LogL: -204822.298 / Time: 0h:23m:25s (0h:2m:36s left)
+Iteration 640 / LogL: -202993.926 / Time: 0h:23m:49s (0h:2m:14s left)
+Iteration 650 / LogL: -203106.369 / Time: 0h:24m:10s (0h:1m:51s left)
+Log-likelihood cutoff on original alignment: -203085.174
+Iteration 660 / LogL: -203341.907 / Time: 0h:24m:33s (0h:1m:29s left)
+Iteration 670 / LogL: -202987.110 / Time: 0h:24m:54s (0h:1m:7s left)
+Iteration 680 / LogL: -202976.646 / Time: 0h:25m:15s (0h:0m:44s left)
+Iteration 690 / LogL: -203028.542 / Time: 0h:25m:39s (0h:0m:22s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 700: -202970.153
+Iteration 700 / LogL: -202970.153 / Time: 0h:26m:1s (0h:3m:43s left)
+Log-likelihood cutoff on original alignment: -203085.174
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.985
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+BETTER TREE FOUND at iteration 708: -202970.150
+Iteration 710 / LogL: -203009.558 / Time: 0h:26m:22s (0h:3m:38s left)
+Iteration 720 / LogL: -202971.699 / Time: 0h:26m:44s (0h:3m:16s left)
+Iteration 730 / LogL: -203511.791 / Time: 0h:27m:6s (0h:2m:53s left)
+Iteration 740 / LogL: -203127.159 / Time: 0h:27m:24s (0h:2m:31s left)
+Iteration 750 / LogL: -203154.365 / Time: 0h:27m:47s (0h:2m:9s left)
+Log-likelihood cutoff on original alignment: -203085.174
+Iteration 760 / LogL: -203244.442 / Time: 0h:28m:9s (0h:1m:46s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 765: -202970.116
+Iteration 770 / LogL: -202973.331 / Time: 0h:28m:29s (0h:3m:31s left)
+Iteration 780 / LogL: -203011.314 / Time: 0h:28m:49s (0h:3m:8s left)
+Iteration 790 / LogL: -202975.662 / Time: 0h:29m:12s (0h:2m:46s left)
