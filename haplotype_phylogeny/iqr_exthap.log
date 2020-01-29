@@ -456,3 +456,50 @@ Log-likelihood cutoff on original alignment: -203085.174
 NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.991
 Iteration 810 / LogL: -203471.203 / Time: 0h:29m:55s (0h:3m:19s left)
 Iteration 820 / LogL: -204960.682 / Time: 0h:30m:18s (0h:2m:57s left)
+Iteration 830 / LogL: -202990.136 / Time: 0h:30m:40s (0h:2m:35s left)
+Iteration 840 / LogL: -202986.932 / Time: 0h:31m:2s (0h:2m:13s left)
+Iteration 850 / LogL: -203174.636 / Time: 0h:31m:24s (0h:1m:50s left)
+Log-likelihood cutoff on original alignment: -203085.174
+Iteration 860 / LogL: -202982.818 / Time: 0h:31m:46s (0h:1m:28s left)
+TREE SEARCH COMPLETED AFTER 866 ITERATIONS / Time: 0h:31m:57s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -202970.116
+Optimal log-likelihood: -202970.116
+Rate parameters:  A-C: 0.89843  A-G: 3.87098  A-T: 2.33660  C-G: 0.47317  C-T: 3.91151  G-T: 1.00000
+Base frequencies:  A: 0.215  C: 0.278  G: 0.286  T: 0.221
+Gamma shape alpha: 1.235
+Parameters optimization took 1 rounds (0.376 sec)
+BEST SCORE FOUND : -202970.116
+Creating bootstrap support values...
+Split supports printed to NEXUS file iqr_exthap.splits.nex
+Total tree length: 6.159
+
+Total number of iterations: 866
+CPU time used for tree search: 11286.590 sec (3h:8m:6s)
+Wall-clock time used for tree search: 1911.950 sec (0h:31m:51s)
+Total CPU time used: 11324.597 sec (3h:8m:44s)
+Total wall-clock time used: 1918.460 sec (0h:31m:58s)
+
+Computing bootstrap consensus tree...
+Reading input file iqr_exthap.splits.nex...
+192 taxa and 2817 splits.
+Consensus tree written to iqr_exthap.contree
+Reading input trees file iqr_exthap.contree
+Log-likelihood of consensus tree: -202971.422
+
+Analysis results written to: 
+  IQ-TREE report:                iqr_exthap.iqtree
+  Maximum-likelihood tree:       iqr_exthap.treefile
+  Likelihood distances:          iqr_exthap.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          iqr_exthap.splits.nex
+  Consensus tree:                iqr_exthap.contree
+  Screen log file:               iqr_exthap.log
+
+Date and Time: Wed Jan 29 11:57:19 2020

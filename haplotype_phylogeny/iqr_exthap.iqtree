@@ -1,0 +1,937 @@
+IQ-TREE 1.6.10 built Feb 19 2019
+
+Input file name: cyp6_UGS_cyp6.alig_loc1e5.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 596904
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol Biol Evol, in press.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 206 sequences with 7296 nucleotide sites
+Number of constant sites: 0 (= 0% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 0 (= 0% of all sites)
+Number of parsimony informative sites: 7296
+Number of distinct site patterns: 5884
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+ASC+G4
+
+List of models sorted by BIC scores: 
+
+Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+GTR+F+ASC+G4    -204526.9501 409833.9002 + 1.0000 409878.0682 + 1.0000 412522.9820 + 1.0000
+GTR+F+ASC       -209913.3127 420604.6254 - 0.0000 420648.5611 - 0.0000 423286.8121 - 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+ASC+G4
+
+Rate parameter R:
+
+  A-C: 0.8984
+  A-G: 3.8710
+  A-T: 2.3366
+  C-G: 0.4732
+  C-T: 3.9115
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2151
+  pi(C) = 0.2784
+  pi(G) = 0.2857
+  pi(T) = 0.2208
+
+Rate matrix Q:
+
+  A    -1.258    0.1682    0.7433    0.3468
+  C    0.1299   -0.8013   0.09086    0.5805
+  G    0.5597   0.08856   -0.7967    0.1484
+  T    0.3379    0.7321     0.192    -1.262
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.235
+
+ Category  Relative_rate  Proportion
+  1         0.1814         0.25
+  2         0.5376         0.25
+  3         1.03           0.25
+  4         2.251          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -202970.1158 (s.e. 1586.1425)
+Unconstrained log-likelihood (without tree): -61914.6888
+Number of free parameters (#branches + #model parameters): 390
+Akaike information criterion (AIC) score: 406720.2317
+Corrected Akaike information criterion (AICc) score: 406764.3997
+Bayesian information criterion (BIC) score: 409409.3135
+
+Total tree length (sum of branch lengths): 6.1593
+Sum of internal branch lengths: 2.1356 (34.6726% of tree length)
+
+WARNING: 47 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|
+|           +------AC0090-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|        +--| (92)
+|        |  |                                                             +**AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                          +**| (7)
+|        |  |                                                          |  |        +--AC0094-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                          |  |     +--| (99)
+|        |  |                                                          |  |     |  +**AC0192-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                          |  |  +**| (30)
+|        |  |                                                          |  |  |  +--AC0169-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                          |  +**| (20)
+|        |  |                                                          |     +--AC0122-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                       +**| (11)
+|        |  |                                                       |  +**AC0102-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                    +**| (28)
+|        |  |                                                    |  |     +**AC0129-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                    |  |  +--| (98)
+|        |  |                                                    |  |  |  +--AC0180-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                    |  +**| (16)
+|        |  |                                                    |     +--AC0131-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 +**| (76)
+|        |  |                                                 |  |                       +--AC0096-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |                    +--| (98)
+|        |  |                                                 |  |                    |  +--AC0118-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                 |  |                 +--| (100)
+|        |  |                                                 |  |                 |  |  +--AC0109-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                 |  |                 |  +--| (100)
+|        |  |                                                 |  |                 |     |           +--------AC0115-Ca_UGS_gt0_zzb1_dup0_indel1_clu11_tag0
+|        |  |                                                 |  |                 |     |        +--| (99)
+|        |  |                                                 |  |                 |     |        |  +--------AC0182-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                 |  |                 |     |     +--| (100)
+|        |  |                                                 |  |                 |     |     |  +----AC0153-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |                 |     |  +--| (100)
+|        |  |                                                 |  |                 |     |  |  +-------------AC0158-Ca_UGS_gt0_zzb0_dup0_indel0_clu31_tag0
+|        |  |                                                 |  |                 |     +--| (100)
+|        |  |                                                 |  |                 |        +----AC0127-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                 |  |              +--| (100)
+|        |  |                                                 |  |              |  +--AC0154-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |           +--| (100)
+|        |  |                                                 |  |           |  +--AC0130-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                 |  |        +--| (100)
+|        |  |                                                 |  |        |  +--AC0195-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                 |  |     +**| (11)
+|        |  |                                                 |  |     |  +--AC0164-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                 |  |  +**| (31)
+|        |  |                                                 |  |  |  |        +--AC0101-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |  |  |     +--| (93)
+|        |  |                                                 |  |  |  |     |  +--AC0167-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |  |  |  +**| (1)
+|        |  |                                                 |  |  |  |  |  |  +--AC0147-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |  |  |  |  +**| (22)
+|        |  |                                                 |  |  |  |  |     |  +--AC0189-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                 |  |  |  |  |     +--| (100)
+|        |  |                                                 |  |  |  |  |        +--AC0201-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |  |  +**| (2)
+|        |  |                                                 |  |  |     |  +--AC0107-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |  |     +**| (7)
+|        |  |                                                 |  |  |        +--AC0178-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                 |  +--| (98)
+|        |  |                                                 |     +--AC0188-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                              +--| (100)
+|        |  |                                              |  +--AC0111-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                           +--| (81)
+|        |  |                                           |  +------AC0182-Cb_UGS_gt0_zzb0_dup0_indel0_clu38_tag0
+|        |  |                                        +--| (86)
+|        |  |                                        |  |     +--AC0123-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                        |  |  +--| (68)
+|        |  |                                        |  |  |  +--AC0124-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                        |  +--| (68)
+|        |  |                                        |     +-------------AC0158-Cb_UGS_gt0_zzb0_dup0_indel0_clu32_tag0
+|        |  |                                     +--| (86)
+|        |  |                                     |  +-----AC0163-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                  +--| (86)
+|        |  |                                  |  |   +--AC0140-Ca_UGS_gt0_zzb1_dup2_indel1_clu1_tag0
+|        |  |                                  |  +---| (100)
+|        |  |                                  |      +--AC0149-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                               +--| (100)
+|        |  |                               |  +---AC0116-Cb_UGS_gt0_zzb1_dup0_indel1_clu13_tag0
+|        |  |                            +--| (27)
+|        |  |                            |  |                       +---AC0135-Cb_UGS_gt0_zzb1_dup1_indel1_clu24_tag0
+|        |  |                            |  |           +-----------| (100)
+|        |  |                            |  |           |           +-------AC0156-Ca_UGS_gt0_zzb1_dup1_indel1_clu24_tag0
+|        |  |                            |  |  +--------| (100)
+|        |  |                            |  |  |        +--AC0179-Ca_UGS_gt0_zzb0_dup0_indel0_clu37_tag0
+|        |  |                            |  +--| (31)
+|        |  |                            |     +------AC0170-Ca_UGS_gt0_zzb1_dup0_indel1_clu36_tag0
+|        |  |                         +--| (100)
+|        |  |                         |  |              +**AC0112-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0
+|        |  |                         |  |           +--| (100)
+|        |  |                         |  |           |  |  +--AC0133-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0
+|        |  |                         |  |           |  +--| (100)
+|        |  |                         |  |           |     +--AC0145-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0
+|        |  |                         |  |     +-----| (100)
+|        |  |                         |  |     |     +--AC0194-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0
+|        |  |                         |  |  +--| (30)
+|        |  |                         |  |  |  |       +--AC0113-Cb_UGS_gt0_zzb1_dup1_indel1_clu9_tag0
+|        |  |                         |  |  |  +-------| (100)
+|        |  |                         |  |  |          +--AC0202-Cb_UGS_gt0_zzb1_dup0_indel1_clu9_tag0
+|        |  |                         |  +--| (24)
+|        |  |                         |     +-------------AC0130-Cb_UGS_gt0_zzb0_dup0_indel0_clu23_tag0
+|        |  |                    +----| (100)
+|        |  |                    |    |               +--AC0109-Ca_UGS_gt0_zzb0_dup0_indel0_clu7_tag0
+|        |  |                    |    |  +------------| (100)
+|        |  |                    |    |  |            |        +--AC0186-Ca_UGS_gt0_zzb1_dup0_indel1_clu7_tag0
+|        |  |                    |    |  |            +--------| (100)
+|        |  |                    |    |  |                     +--AC0192-Cb_UGS_gt0_zzb0_dup0_indel0_clu7_tag0
+|        |  |                    |    +--| (100)
+|        |  |                    |       |                                +--------AC0117-Cb_UGS_gt0_zzb1_dup0_indel1_clu15_tag0
+|        |  |                    |       |                             +**| (92)
+|        |  |                    |       |                             |  +--AC0200-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0
+|        |  |                    |       |                          +--| (92)
+|        |  |                    |       |                          |  +**AC0160-Cb_UGS_gt0_zzb1_dup1_indel1_clu21_tag0
+|        |  |                    |       |                       +--| (92)
+|        |  |                    |       |                       |  +**AC0176-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0
+|        |  |                    |       |                    +--| (100)
+|        |  |                    |       |                    |  +--AC0179-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0
+|        |  |                    |       |              +-----| (100)
+|        |  |                    |       |              |     +**AC0152-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0
+|        |  |                    |       |           +--| (100)
+|        |  |                    |       |           |  +--AC0154-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0
+|        |  |                    |       +-----------| (100)
+|        |  |                    |                   +**AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0
+|        |  |                 +--| (85)
+|        |  |                 |  |        +-----AC0097-Cb_UGS_gt0_zzb1_dup1_indel1_clu2_tag0
+|        |  |                 |  +--------| (100)
+|        |  |                 |           |     +----AC0161-Ca_UGS_gt0_zzb1_dup0_indel1_clu33_tag0
+|        |  |                 |           +-----| (100)
+|        |  |                 |                 +--AC0174-Cb_UGS_gt0_zzb1_dup1_indel1_clu33_tag0
+|        |  |              +--| (100)
+|        |  |              |  |                    +--AC0114-Ca_UGS_gt0_zzb1_dup1_indel1_clu10_tag0
+|        |  |              |  |     +--------------| (100)
+|        |  |              |  |     |              +--AC0178-Ca_UGS_gt0_zzb0_dup0_indel0_clu10_tag0
+|        |  |              |  |  +--| (85)
+|        |  |              |  |  |  +--------------AC0150-Ca_UGS_gt0_zzb1_dup1_indel1_clu27_tag0
+|        |  |              |  +--| (84)
+|        |  |              |     |  +-------------AC0137-Ca_UGS_gt0_zzb1_dup0_indel1_clu25_tag0
+|        |  |              |     +--| (83)
+|        |  |              |        +--------------AC0196-Cb_UGS_gt0_zzb1_dup1_indel1_clu40_tag0
+|        |  |           +--| (100)
+|        |  |           |  |  +----------AC0104-Ca_UGS_gt0_zzb1_dup1_indel1_clu5_tag0
+|        |  |           |  +--| (100)
+|        |  |           |     +-----------AC0151-Ca_UGS_gt0_zzb1_dup1_indel1_clu29_tag0
+|        |  |        +--| (100)
+|        |  |        |  +---------AC0184-Ca_UGS_gt0_zzb1_dup1_indel1_clu39_tag0
+|        |  |     +--| (100)
+|        |  |     |  +----------AC0162-Ca_UGS_gt0_zzb1_dup1_indel1_clu34_tag0
+|        |  |  +--| (94)
+|        |  |  |  +-----AC0120-Cb_UGS_gt0_zzb1_dup1_indel1_clu18_tag0
+|        |  +--| (93)
+|        |     |  +---AC0119-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|        |     +--| (100)
+|        |        |   +--AC0121-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|        |        +---| (100)
+|        |            +**AC0193-Cb_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1
+|     +--| (100)
+|     |  +--AC0125-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  +--| (98)
+|  |  |  +--AC0098-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |  +--| (98)
+|  |     +-------AC0151-Cb_UGS_gt1_zzb1_dup1_indel1_clu30_tag1
++--| (81)
+|  |                                            +--AC0091-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|  |                                         +--| (67)
+|  |                                         |  |              +--AC0091-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|  |                                         |  |           +--| (98)
+|  |                                         |  |           |  |                          +--AC0099-Cb_UGS_gt1_zzb2_dup0_indel2_clu4_tag1
+|  |                                         |  |           |  |                       +--| (100)
+|  |                                         |  |           |  |                       |  +------AC0119-Ca_UGS_gt0_zzb1_dup0_indel1_clu16_tag0
+|  |                                         |  |           |  |                    +--| (80)
+|  |                                         |  |           |  |                    |  |      +--AC0100-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                         |  |           |  |                    |  +------| (100)
+|  |                                         |  |           |  |                    |         +----AC0144-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                         |  |           |  |                 +--| (98)
+|  |                                         |  |           |  |                 |  |        +-----AC0116-Ca_UGS_gt1_zzb1_dup0_indel1_clu12_tag1
+|  |                                         |  |           |  |                 |  |     +--| (100)
+|  |                                         |  |           |  |                 |  |     |  |              +**AC0121-Ca_UGS_gt1_zzb2_dup0_indel2_clu19_tag1
+|  |                                         |  |           |  |                 |  |     |  |           +--| (100)
+|  |                                         |  |           |  |                 |  |     |  |           |  +--AC0203-Cb_UGS_gt1_zzb2_dup1_indel2_clu19_tag1
+|  |                                         |  |           |  |                 |  |     |  |        +--| (100)
+|  |                                         |  |           |  |                 |  |     |  |        |  +--AC0159-Cb_UGS_gt1_zzb2_dup0_indel2_clu19_tag1
+|  |                                         |  |           |  |                 |  |     |  |     +--| (100)
+|  |                                         |  |           |  |                 |  |     |  |     |  +--AC0200-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1
+|  |                                         |  |           |  |                 |  |     |  |  +--| (99)
+|  |                                         |  |           |  |                 |  |     |  |  |  +----AC0122-Cb_UGS_gt1_zzb1_dup0_indel1_clu20_tag1
+|  |                                         |  |           |  |                 |  |     |  +--| (100)
+|  |                                         |  |           |  |                 |  |     |     +--AC0123-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1
+|  |                                         |  |           |  |                 |  |  +--| (77)
+|  |                                         |  |           |  |                 |  |  |  +---------AC0120-Ca_UGS_gt1_zzb1_dup1_indel1_clu17_tag1
+|  |                                         |  |           |  |                 |  +--| (82)
+|  |                                         |  |           |  |                 |     |     +-------AC0117-Ca_UGS_gt0_zzb1_dup0_indel1_clu14_tag1
+|  |                                         |  |           |  |                 |     |  +--| (100)
+|  |                                         |  |           |  |                 |     |  |  +----------AC0150-Cb_UGS_gt0_zzb1_dup1_indel1_clu28_tag0
+|  |                                         |  |           |  |                 |     +--| (98)
+|  |                                         |  |           |  |                 |        +-----AC0169-Cb_UGS_gt0_zzb1_dup1_indel1_clu35_tag1
+|  |                                         |  |           |  |              +--| (91)
+|  |                                         |  |           |  |              |  +-------AC0162-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                         |  |           |  |           +--| (79)
+|  |                                         |  |           |  |           |  |  +---AC0149-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                         |  |           |  |           |  +--| (69)
+|  |                                         |  |           |  |           |     +----AC0184-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                         |  |           |  |        +--| (100)
+|  |                                         |  |           |  |        |  +---AC0194-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                         |  |           |  |     +--| (97)
+|  |                                         |  |           |  |     |  |  +---AC0108-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                         |  |           |  |     |  +--| (98)
+|  |                                         |  |           |  |     |     +--AC0128-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|  |                                         |  |           |  |  +--| (96)
+|  |                                         |  |           |  |  |  |     +------AC0137-Cb_UGS_gt1_zzb1_dup0_indel1_clu26_tag1
+|  |                                         |  |           |  |  |  |  +--| (100)
+|  |                                         |  |           |  |  |  |  |  +**AC0199-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                         |  |           |  |  |  +--| (87)
+|  |                                         |  |           |  |  |     +--AC0140-Cb_UGS_gt1_zzb1_dup2_indel1_clu0_tag1
+|  |                                         |  |           |  +--| (100)
+|  |                                         |  |           |     |      +**AC0103-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                         |  |           |     |  +---| (100)
+|  |                                         |  |           |     |  |   +--AC0107-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                         |  |           |     +--| (100)
+|  |                                         |  |           |        +**AC0152-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                         |  |        +--| (97)
+|  |                                         |  |        |  |  +--AC0097-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                         |  |        |  +--| (100)
+|  |                                         |  |        |     |  +--AC0164-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                         |  |        |     +--| (100)
+|  |                                         |  |        |        +--AC0189-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                         |  |     +--| (86)
+|  |                                         |  |     |  +--AC0102-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                         |  |  +--| (78)
+|  |                                         |  |  |  +--AC0196-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                         |  +--| (58)
+|  |                                         |     +--AC0124-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                      +--| (79)
+|  |                                      |  +--AC0170-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                   +--| (14)
+|  |                                   |  |              +--AC0094-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                   |  |           +--| (23)
+|  |                                   |  |           |  |     +--AC0126-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                   |  |           |  |  +--| (100)
+|  |                                   |  |           |  |  |  +--AC0148-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                   |  |           |  +--| (97)
+|  |                                   |  |           |     +--AC0133-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                   |  |        +**| (9)
+|  |                                   |  |        |  +--AC0176-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                   |  |     +**| (2)
+|  |                                   |  |     |  +**AC0142-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                   |  |  +**| (10)
+|  |                                   |  |  |  |        +--AC0096-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                   |  |  |  |     +**| (30)
+|  |                                   |  |  |  |     |  +--AC0191-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                   |  |  |  |  +**| (5)
+|  |                                   |  |  |  |  |  +--AC0100-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                   |  |  |  +**| (0)
+|  |                                   |  |  |     +**AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                   |  +**| (17)
+|  |                                   |     +--AC0159-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|  |                                +**| (6)
+|  |                                |  |  +--AC0183-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                |  +--| (71)
+|  |                                |     +**AC0199-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             +**| (6)
+|  |                             |  |           +**AC0092-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                             |  |        +**| (96)
+|  |                             |  |        |  +**AC0136-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             |  |     +--| (69)
+|  |                             |  |     |  +--AC0172-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             |  |  +**| (6)
+|  |                             |  |  |  |                       +--AC0106-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                             |  |  |  |                    +--| (94)
+|  |                             |  |  |  |                    |  +--AC0132-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                             |  |  |  |                 +--| (61)
+|  |                             |  |  |  |                 |  |  +--AC0110-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             |  |  |  |                 |  +**| (48)
+|  |                             |  |  |  |                 |     +**AC0129-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                             |  |  |  |              +**| (43)
+|  |                             |  |  |  |              |  |  +**AC0139-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             |  |  |  |              |  +--| (98)
+|  |                             |  |  |  |              |     +**AC0188-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                             |  |  |  |           +**| (41)
+|  |                             |  |  |  |           |  |                 +**AC0136-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             |  |  |  |           |  |              +--| (100)
+|  |                             |  |  |  |           |  |              |  +**AC0173-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             |  |  |  |           |  |           +**| (71)
+|  |                             |  |  |  |           |  |           |  +--AC0172-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             |  |  |  |           |  |        +--| (93)
+|  |                             |  |  |  |           |  |        |  +**AC0191-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             |  |  |  |           |  |     +**| (6)
+|  |                             |  |  |  |           |  |     |  +--AC0166-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                             |  |  |  |           |  |  +**| (4)
+|  |                             |  |  |  |           |  |  |  |  +--AC0190-Ca_UGS_gt1_zzb2_dup3_indel2_clu0_tag1
+|  |                             |  |  |  |           |  |  |  +**| (38)
+|  |                             |  |  |  |           |  |  |     +--AC0193-Ca_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1
+|  |                             |  |  |  |           |  +--| (81)
+|  |                             |  |  |  |           |     +--AC0171-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                             |  |  |  |        +--| (99)
+|  |                             |  |  |  |        |  +--AC0195-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                             |  |  |  |     +**| (74)
+|  |                             |  |  |  |     |  +**AC0126-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             |  |  |  |  +--| (38)
+|  |                             |  |  |  |  |  |  +--AC0144-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             |  |  |  |  |  +--| (86)
+|  |                             |  |  |  |  |     +--AC0156-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                             |  |  |  +**| (24)
+|  |                             |  |  |     +--AC0163-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                             |  +**| (4)
+|  |                             |     +**AC0160-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                          +**| (40)
+|  |                          |  |  +--AC0138-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                          |  +--| (39)
+|  |                          |     +**AC0187-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                       +--| (100)
+|  |                       |  |           +--AC0092-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                       |  |        +**| (35)
+|  |                       |  |        |  +--AC0181-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |  |     +**| (8)
+|  |                       |  |     |  |                 +--AC0093-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                       |  |     |  |              +**| (43)
+|  |                       |  |     |  |              |  +--AC0168-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                       |  |     |  |           +**| (32)
+|  |                       |  |     |  |           |  +**AC0145-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                       |  |     |  |        +--| (100)
+|  |                       |  |     |  |        |  +--AC0180-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                       |  |     |  |     +**| (7)
+|  |                       |  |     |  |     |  |  +--AC0166-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                       |  |     |  |     |  +**| (15)
+|  |                       |  |     |  |     |     +--AC0187-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                       |  |     |  |  +**| (4)
+|  |                       |  |     |  |  |  +**AC0138-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |  |     |  +**| (0)
+|  |                       |  |     |     +**AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                       |  |  +**| (23)
+|  |                       |  |  |  |        +**AC0112-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                       |  |  |  |     +--| (99)
+|  |                       |  |  |  |     |  +--AC0202-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                       |  |  |  |  +**| (22)
+|  |                       |  |  |  |  |  +--AC0203-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |  |  |  +**| (7)
+|  |                       |  |  |     +--AC0114-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                       |  +--| (73)
+|  |                       |     |        +---AC0108-Ca_UGS_gt1_zzb2_dup1_indel2_clu6_tag1
+|  |                       |     |     +--| (100)
+|  |                       |     |     |  +--AC0128-Ca_UGS_gt1_zzb2_dup0_indel2_clu22_tag1
+|  |                       |     |  +--| (98)
+|  |                       |     |  |  +--AC0142-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |     +--| (99)
+|  |                       |        +**AC0115-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                    +--| (99)
+|  |                    |  |        +**AC0101-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                    |  |     +--| (100)
+|  |                    |  |     |  +--AC0110-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                    |  |  +--| (100)
+|  |                    |  |  |  +**AC0173-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                    |  +--| (100)
+|  |                    |     +--AC0197-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                 +--| (82)
+|  |                 |  |  +--AC0098-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                 |  +--| (82)
+|  |                 |     +----AC0104-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |              +--| (76)
+|  |              |  +--AC0131-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |           +--| (98)
+|  |           |  |           +--AC0099-Ca_UGS_gt1_zzb2_dup0_indel2_clu3_tag1
+|  |           |  |        +--| (100)
+|  |           |  |        |  +**AC0125-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |           |  |     +--| (97)
+|  |           |  |     |  +----AC0135-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |           |  |  +--| (97)
+|  |           |  |  |  +--AC0174-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |           |  +--| (76)
+|  |           |     +--AC0113-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |        +--| (100)
+|  |        |  +--AC0118-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |     +--| (93)
+|  |     |  |  +---AC0153-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |     |  +--| (88)
+|  |     |     +--AC0161-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |  +--| (100)
+|  |  |  +--AC0168-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  +--| (95)
+|     |  +--AC0095-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|     +--| (95)
+|        +--AC0095-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|
++--AC0181-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+
+Tree in newick format:
+
+(AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0256781937,((((AC0090-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0657943771,((((((((((((((((((((AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0000020631,(((AC0094-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0001391518,AC0192-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0000020022)99:0.0001389891,AC0169-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0027860115)30:0.0000020105,AC0122-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0002783695)20:0.0000020125)7:0.0000020833,AC0102-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0000020631)11:0.0000020020,((AC0129-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0000020995,AC0180-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0005557637)98:0.0001389774,AC0131-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0002783212)16:0.0000020631)28:0.0000020871,((((((((AC0096-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0220995763,AC0118-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0276836102)98:0.0059811288,(AC0109-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0330450748,((((AC0115-Ca_UGS_gt0_zzb1_dup0_indel1_clu11_tag0:0.0846671785,AC0182-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0813741030)99:0.0119181421,AC0153-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0449664592)100:0.0054813208,AC0158-Ca_UGS_gt0_zzb0_dup0_indel0_clu31_tag0:0.1297413724)100:0.0090064064,AC0127-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0496156405)100:0.0098501646)100:0.0040952232)100:0.0145389039,AC0154-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0168044880)100:0.0101282681,AC0130-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0060520505)100:0.0053683955,AC0195-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0060136283)100:0.0063809761,AC0164-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0001389435)11:0.0000029906,(((AC0101-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0002785500,AC0167-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0001391980)93:0.0002784342,(AC0147-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0005558524,(AC0189-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0011133758,AC0201-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0001389974)100:0.0002785866)22:0.0000024840)1:0.0000020041,(AC0107-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0002783656,AC0178-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0004176601)7:0.0000020787)2:0.0000020846)31:0.0000025576,AC0188-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0001391643)98:0.0001391851)76:0.0000978702,AC0111-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0001802261)100:0.0069918511,AC0182-Cb_UGS_gt0_zzb0_dup0_indel0_clu38_tag0:0.0697329131)81:0.0120383632,((AC0123-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0197673179,AC0124-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0160182677)68:0.0021171013,AC0158-Cb_UGS_gt0_zzb0_dup0_indel0_clu32_tag0:0.1234619529)68:0.0013123581)86:0.0206486114,AC0163-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0596398519)86:0.0048152096,(AC0140-Ca_UGS_gt0_zzb1_dup2_indel1_clu1_tag0:0.0238150142,AC0149-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0145286928)100:0.0359599889)86:0.0124567333,AC0116-Cb_UGS_gt0_zzb1_dup0_indel1_clu13_tag0:0.0417222970)100:0.0262659139,(((AC0135-Cb_UGS_gt0_zzb1_dup1_indel1_clu24_tag0:0.0398988445,AC0156-Ca_UGS_gt0_zzb1_dup1_indel1_clu24_tag0:0.0768905591)100:0.1089912301,AC0179-Ca_UGS_gt0_zzb0_dup0_indel0_clu37_tag0:0.0054828812)100:0.0803049928,AC0170-Ca_UGS_gt0_zzb1_dup0_indel1_clu36_tag0:0.0658958412)31:0.0107152799)27:0.0024542379,((((AC0112-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0:0.0000024742,(AC0133-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0:0.0001394881,AC0145-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0:0.0001394802)100:0.0004182845)100:0.0299070348,AC0194-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0:0.0245218911)100:0.0544441127,(AC0113-Cb_UGS_gt0_zzb1_dup1_indel1_clu9_tag0:0.0009724524,AC0202-Cb_UGS_gt0_zzb1_dup0_indel1_clu9_tag0:0.0008401030)100:0.0754920008)30:0.0076194726,AC0130-Cb_UGS_gt0_zzb0_dup0_indel0_clu23_tag0:0.1295724574)24:0.0015522155)100:0.0201429349,((AC0109-Ca_UGS_gt0_zzb0_dup0_indel0_clu7_tag0:0.0008445275,(AC0186-Ca_UGS_gt0_zzb1_dup0_indel1_clu7_tag0:0.0007184904,AC0192-Cb_UGS_gt0_zzb0_dup0_indel0_clu7_tag0:0.0002605062)100:0.0831474135)100:0.1211579423,(((((((AC0117-Cb_UGS_gt0_zzb1_dup0_indel1_clu15_tag0:0.0852941835,AC0200-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0:0.0007369716)92:0.0000952619,AC0160-Cb_UGS_gt0_zzb1_dup1_indel1_clu21_tag0:0.0000024694)92:0.0002771661,AC0176-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0:0.0000020234)92:0.0001386611,AC0179-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0:0.0009722935)100:0.0002771281,AC0152-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0:0.0000020828)100:0.0611345765,AC0154-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0:0.0159939807)100:0.0274052310,AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0:0.0000024638)100:0.1125701040)100:0.0110157471)100:0.0502777595,(AC0097-Cb_UGS_gt0_zzb1_dup1_indel1_clu2_tag0:0.0574790912,(AC0161-Ca_UGS_gt0_zzb1_dup0_indel1_clu33_tag0:0.0462757087,AC0174-Cb_UGS_gt0_zzb1_dup1_indel1_clu33_tag0:0.0136350627)100:0.0596566437)100:0.0814550140)85:0.0124282212,(((AC0114-Ca_UGS_gt0_zzb1_dup1_indel1_clu10_tag0:0.0151362391,AC0178-Ca_UGS_gt0_zzb0_dup0_indel0_clu10_tag0:0.0221793985)100:0.1321643731,AC0150-Ca_UGS_gt0_zzb1_dup1_indel1_clu27_tag0:0.1367814049)85:0.0244697062,(AC0137-Ca_UGS_gt0_zzb1_dup0_indel1_clu25_tag0:0.1266433941,AC0196-Cb_UGS_gt0_zzb1_dup1_indel1_clu40_tag0:0.1327049612)83:0.0137288235)84:0.0044196485)100:0.0339507185,(AC0104-Ca_UGS_gt0_zzb1_dup1_indel1_clu5_tag0:0.1030792676,AC0151-Ca_UGS_gt0_zzb1_dup1_indel1_clu29_tag0:0.1084441943)100:0.0211361081)100:0.0346394515,AC0184-Ca_UGS_gt0_zzb1_dup1_indel1_clu39_tag0:0.0929080857)100:0.0130883803,AC0162-Ca_UGS_gt0_zzb1_dup1_indel1_clu34_tag0:0.0978883797)100:0.0223792487,AC0120-Cb_UGS_gt0_zzb1_dup1_indel1_clu18_tag0:0.0588782591)94:0.0153663504,(AC0119-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0428844535,(AC0121-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0001394011,AC0193-Cb_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1:0.0000027271)100:0.0413842470)100:0.0112874117)93:0.0065819473)92:0.0085388928,AC0125-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0290608518)100:0.0160297009,(AC0098-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0185169308,AC0151-Cb_UGS_gt1_zzb1_dup1_indel1_clu30_tag1:0.0750114270)98:0.0044349154)98:0.0069333047,(((((((((((((((AC0091-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0019355154,(((((AC0091-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0049078195,(((((((((AC0099-Cb_UGS_gt1_zzb2_dup0_indel2_clu4_tag1:0.0135800149,AC0119-Ca_UGS_gt0_zzb1_dup0_indel1_clu16_tag0:0.0695897208)100:0.0339187722,(AC0100-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0020753533,AC0144-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0485772332)100:0.0662254124)80:0.0061571123,(((AC0116-Ca_UGS_gt1_zzb1_dup0_indel1_clu12_tag1:0.0528997745,(((((AC0121-Ca_UGS_gt1_zzb2_dup0_indel2_clu19_tag1:0.0000020631,AC0203-Cb_UGS_gt1_zzb2_dup1_indel2_clu19_tag1:0.0005579230)100:0.0216732163,AC0159-Cb_UGS_gt1_zzb2_dup0_indel2_clu19_tag1:0.0033619559)100:0.0010717845,AC0200-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1:0.0011609492)100:0.0182360385,AC0122-Cb_UGS_gt1_zzb1_dup0_indel1_clu20_tag1:0.0471928877)99:0.0106721546,AC0123-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1:0.0115108103)100:0.0301004772)100:0.0215710281,AC0120-Ca_UGS_gt1_zzb1_dup1_indel1_clu17_tag1:0.0905632059)77:0.0038868526,((AC0117-Ca_UGS_gt0_zzb1_dup0_indel1_clu14_tag1:0.0752780695,AC0150-Cb_UGS_gt0_zzb1_dup1_indel1_clu28_tag0:0.0992409182)100:0.0233143849,AC0169-Cb_UGS_gt0_zzb1_dup1_indel1_clu35_tag1:0.0609851180)98:0.0101981795)82:0.0060539531)98:0.0051018345,AC0162-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0775774736)91:0.0060633054,(AC0149-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0398382983,AC0184-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0485328167)69:0.0032796614)79:0.0042799996,AC0194-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0411851948)100:0.0130813115,(AC0108-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0368681147,AC0128-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0329862196)98:0.0064496198)97:0.0053524699,((AC0137-Cb_UGS_gt1_zzb1_dup0_indel1_clu26_tag1:0.0669109198,AC0199-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020005)100:0.0272002729,AC0140-Cb_UGS_gt1_zzb1_dup2_indel1_clu0_tag1:0.0228429616)87:0.0040226971)96:0.0047282370,((AC0103-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000925454,AC0107-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0126332723)100:0.0379294365,AC0152-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000027516)100:0.0210336906)100:0.0166497511)98:0.0024135771,(AC0097-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0022428817,(AC0164-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0004030034,AC0189-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0030776093)100:0.0037727030)100:0.0013645549)97:0.0028817967,AC0102-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0016482515)86:0.0012220982,AC0196-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0144882815)78:0.0011913366,AC0124-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0006921533)58:0.0001559956)67:0.0002749289,AC0170-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0009849110)79:0.0005421337,(((((AC0094-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0001393313,((AC0126-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0002776895,AC0148-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0001383523)100:0.0005554121,AC0133-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0001391561)97:0.0001387410)23:0.0001392929,AC0176-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0002775485)9:0.0000020777,AC0142-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)2:0.0000021032,(((AC0096-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0106578543,AC0191-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0001392280)30:0.0000029714,AC0100-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0002771506)5:0.0000020012,AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)0:0.0000020765)10:0.0000020094,AC0159-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0001385835)17:0.0000022982)14:0.0001385717,(AC0183-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0004161496,AC0199-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020813)71:0.0001385681)6:0.0000020049,((((AC0092-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0000020631,AC0136-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)96:0.0000023185,AC0172-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0001385565)69:0.0001385502,((((((((AC0106-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0001385675,AC0132-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0002773643)94:0.0001383632,(AC0110-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0005550691,AC0129-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0000020800)48:0.0000027218)61:0.0001390010,(AC0139-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631,AC0188-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0000020631)98:0.0001391236)43:0.0000028132,((((((AC0136-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020901,AC0173-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020899)100:0.0002771109,AC0172-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0004164492)71:0.0000020346,AC0191-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000021506)93:0.0001385797,AC0166-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0001392075)6:0.0000029883,(AC0190-Ca_UGS_gt1_zzb2_dup3_indel2_clu0_tag1:0.0002770820,AC0193-Ca_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1:0.0005539712)38:0.0000029532)4:0.0000020791,AC0171-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0002769563)81:0.0001387443)41:0.0000020796,AC0195-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0001392364)99:0.0001384593,AC0126-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020831)74:0.0000023732,(AC0144-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0263126814,AC0156-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0280210320)86:0.0055413933)38:0.0001375965,AC0163-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0043146972)24:0.0000025638)6:0.0000020249,AC0160-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0000020631)4:0.0000020127)6:0.0000029531,(AC0138-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0008317936,AC0187-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0000020827)39:0.0001385645)40:0.0000020063,((((AC0092-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0006928680,AC0181-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0002775372)35:0.0000028469,((((((AC0093-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0001385654,AC0168-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0026371176)43:0.0000029981,AC0145-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0000020631)32:0.0000020115,AC0180-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0002775540)100:0.0001392805,(AC0166-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0002775931,AC0187-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0002776040)15:0.0000020631)7:0.0000021035,AC0138-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)4:0.0000020039,AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0000020631)0:0.0000021137)8:0.0000020631,(((AC0112-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000028326,AC0202-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0015260876)99:0.0001385601,AC0203-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0001385854)22:0.0000026182,AC0114-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0001392518)7:0.0000020631)23:0.0000020837,(((AC0108-Ca_UGS_gt1_zzb2_dup1_indel2_clu6_tag1:0.0383578042,AC0128-Ca_UGS_gt1_zzb2_dup0_indel2_clu22_tag1:0.0340218556)100:0.0174996569,AC0142-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0020349866)98:0.0004633577,AC0115-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000020939)99:0.0002775790)73:0.0001380734)100:0.0034801983,(((AC0101-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000025825,AC0110-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0045960660)100:0.0011092596,AC0173-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000029680)100:0.0012153653,AC0197-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0001712066)100:0.0024127074)99:0.0012414961,(AC0098-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0114978383,AC0104-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0439986870)82:0.0027321538)82:0.0011675335,AC0131-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0061948282)76:0.0013212767,((((AC0099-Ca_UGS_gt1_zzb2_dup0_indel2_clu3_tag1:0.0135197420,AC0125-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0000021794)100:0.0030726017,AC0135-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0485972330)97:0.0049230199,AC0174-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0049511639)97:0.0022631618,AC0113-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0097476710)76:0.0004861485)98:0.0047627709,AC0118-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0133387631)100:0.0049125753,(AC0153-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0396258644,AC0161-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0098745535)88:0.0022926084)93:0.0029059903,AC0168-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0173970873)100:0.0036714488,(AC0095-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0170075897,AC0095-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0237185697)95:0.0028298544)95:0.0049289289)81:0.0052435697,AC0181-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0203223596);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000bootstrap trees
+Log-likelihood of consensus tree: -202971.422302
+Robinson-Foulds distance between ML tree and consensus tree: 60
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|
+|           +------AC0090-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|        +--| (92)
+|        |  |                                                                   +**AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                                +**|
+|        |  |                                                                |  +**AC0106-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                             +--|
+|        |  |                                                             |  +**AC0132-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                          +--| (18)
+|        |  |                                                          |  +--AC0102-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                       +--| (11)
+|        |  |                                                       |  |        +--AC0094-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                       |  |     +--| (99)
+|        |  |                                                       |  |     |  +--AC0192-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                       |  |  +--| (30)
+|        |  |                                                       |  |  |  +--AC0169-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                       |  +--| (20)
+|        |  |                                                       |     +--AC0122-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                    +--| (28)
+|        |  |                                                    |  |     +--AC0129-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                    |  |  +--| (98)
+|        |  |                                                    |  |  |  +--AC0180-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                    |  +--| (16)
+|        |  |                                                    |     +--AC0131-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 +--| (76)
+|        |  |                                                 |  |                             +--AC0096-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |                          +--| (98)
+|        |  |                                                 |  |                          |  +--AC0118-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                 |  |                       +--| (100)
+|        |  |                                                 |  |                       |  |  +--AC0109-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                 |  |                       |  +--| (100)
+|        |  |                                                 |  |                       |     |           +--------AC0115-Ca_UGS_gt0_zzb1_dup0_indel1_clu11_tag0
+|        |  |                                                 |  |                       |     |        +--| (99)
+|        |  |                                                 |  |                       |     |        |  +--------AC0182-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                 |  |                       |     |     +--| (100)
+|        |  |                                                 |  |                       |     |     |  +----AC0153-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |                       |     |  +--| (100)
+|        |  |                                                 |  |                       |     |  |  +-------------AC0158-Ca_UGS_gt0_zzb0_dup0_indel0_clu31_tag0
+|        |  |                                                 |  |                       |     +--| (100)
+|        |  |                                                 |  |                       |        +----AC0127-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                 |  |                    +--| (100)
+|        |  |                                                 |  |                    |  +--AC0154-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |                 +--| (100)
+|        |  |                                                 |  |                 |  +--AC0130-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                 |  |              +--| (100)
+|        |  |                                                 |  |              |  +--AC0195-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                 |  |           +--| (76)
+|        |  |                                                 |  |           |  |  +--AC0101-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |           |  +--| (93)
+|        |  |                                                 |  |           |     +--AC0167-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |        +--| (15)
+|        |  |                                                 |  |        |  +--AC0107-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |     +--| (10)
+|        |  |                                                 |  |     |  |  +--AC0147-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  |     |  +--| (39)
+|        |  |                                                 |  |     |     +--AC0164-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                 |  |  +--| (31)
+|        |  |                                                 |  |  |  |  +--AC0178-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0
+|        |  |                                                 |  |  |  +--| (35)
+|        |  |                                                 |  |  |     |  +--AC0189-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                                 |  |  |     +--| (100)
+|        |  |                                                 |  |  |        +--AC0201-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                                 |  +--| (98)
+|        |  |                                                 |     +--AC0188-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                              +--| (100)
+|        |  |                                              |  +--AC0111-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                           +--| (81)
+|        |  |                                           |  +------AC0182-Cb_UGS_gt0_zzb0_dup0_indel0_clu38_tag0
+|        |  |                                        +--| (86)
+|        |  |                                        |  |     +--AC0123-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0
+|        |  |                                        |  |  +--| (68)
+|        |  |                                        |  |  |  +--AC0124-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                        |  +--| (68)
+|        |  |                                        |     +-------------AC0158-Cb_UGS_gt0_zzb0_dup0_indel0_clu32_tag0
+|        |  |                                     +--| (86)
+|        |  |                                     |  +-----AC0163-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                                  +--| (86)
+|        |  |                                  |  |   +--AC0140-Ca_UGS_gt0_zzb1_dup2_indel1_clu1_tag0
+|        |  |                                  |  +---| (100)
+|        |  |                                  |      +--AC0149-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0
+|        |  |                               +--| (100)
+|        |  |                               |  +---AC0116-Cb_UGS_gt0_zzb1_dup0_indel1_clu13_tag0
+|        |  |                            +--| (39)
+|        |  |                            |  |          +--AC0113-Cb_UGS_gt0_zzb1_dup1_indel1_clu9_tag0
+|        |  |                            |  |  +-------| (100)
+|        |  |                            |  |  |       +--AC0202-Cb_UGS_gt0_zzb1_dup0_indel1_clu9_tag0
+|        |  |                            |  +--| (69)
+|        |  |                            |     +------AC0170-Ca_UGS_gt0_zzb1_dup0_indel1_clu36_tag0
+|        |  |                         +--| (100)
+|        |  |                         |  |              +--AC0112-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0
+|        |  |                         |  |           +--| (100)
+|        |  |                         |  |           |  |  +--AC0133-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0
+|        |  |                         |  |           |  +--| (100)
+|        |  |                         |  |           |     +--AC0145-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0
+|        |  |                         |  |     +-----| (100)
+|        |  |                         |  |     |     +--AC0194-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0
+|        |  |                         |  |  +--| (62)
+|        |  |                         |  |  |  |                    +---AC0135-Cb_UGS_gt0_zzb1_dup1_indel1_clu24_tag0
+|        |  |                         |  |  |  |        +-----------| (100)
+|        |  |                         |  |  |  |        |           +-------AC0156-Ca_UGS_gt0_zzb1_dup1_indel1_clu24_tag0
+|        |  |                         |  |  |  +--------| (100)
+|        |  |                         |  |  |           +--AC0179-Ca_UGS_gt0_zzb0_dup0_indel0_clu37_tag0
+|        |  |                         |  +--| (54)
+|        |  |                         |     +-------------AC0130-Cb_UGS_gt0_zzb0_dup0_indel0_clu23_tag0
+|        |  |                    +----| (100)
+|        |  |                    |    |               +--AC0109-Ca_UGS_gt0_zzb0_dup0_indel0_clu7_tag0
+|        |  |                    |    |  +------------| (100)
+|        |  |                    |    |  |            |        +--AC0186-Ca_UGS_gt0_zzb1_dup0_indel1_clu7_tag0
+|        |  |                    |    |  |            +--------| (100)
+|        |  |                    |    |  |                     +--AC0192-Cb_UGS_gt0_zzb0_dup0_indel0_clu7_tag0
+|        |  |                    |    +--| (100)
+|        |  |                    |       |                                +--------AC0117-Cb_UGS_gt0_zzb1_dup0_indel1_clu15_tag0
+|        |  |                    |       |                             +--| (92)
+|        |  |                    |       |                             |  +--AC0200-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0
+|        |  |                    |       |                          +--| (92)
+|        |  |                    |       |                          |  +--AC0160-Cb_UGS_gt0_zzb1_dup1_indel1_clu21_tag0
+|        |  |                    |       |                       +--| (92)
+|        |  |                    |       |                       |  +--AC0176-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0
+|        |  |                    |       |                    +--| (100)
+|        |  |                    |       |                    |  +--AC0179-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0
+|        |  |                    |       |              +-----| (100)
+|        |  |                    |       |              |     +--AC0152-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0
+|        |  |                    |       |           +--| (100)
+|        |  |                    |       |           |  +--AC0154-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0
+|        |  |                    |       +-----------| (100)
+|        |  |                    |                   +--AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0
+|        |  |                 +--| (85)
+|        |  |                 |  |        +-----AC0097-Cb_UGS_gt0_zzb1_dup1_indel1_clu2_tag0
+|        |  |                 |  +--------| (100)
+|        |  |                 |           |     +----AC0161-Ca_UGS_gt0_zzb1_dup0_indel1_clu33_tag0
+|        |  |                 |           +-----| (100)
+|        |  |                 |                 +--AC0174-Cb_UGS_gt0_zzb1_dup1_indel1_clu33_tag0
+|        |  |              +--| (100)
+|        |  |              |  |                    +--AC0114-Ca_UGS_gt0_zzb1_dup1_indel1_clu10_tag0
+|        |  |              |  |     +--------------| (100)
+|        |  |              |  |     |              +--AC0178-Ca_UGS_gt0_zzb0_dup0_indel0_clu10_tag0
+|        |  |              |  |  +--| (85)
+|        |  |              |  |  |  +--------------AC0150-Ca_UGS_gt0_zzb1_dup1_indel1_clu27_tag0
+|        |  |              |  +--| (84)
+|        |  |              |     |  +-------------AC0137-Ca_UGS_gt0_zzb1_dup0_indel1_clu25_tag0
+|        |  |              |     +--| (83)
+|        |  |              |        +--------------AC0196-Cb_UGS_gt0_zzb1_dup1_indel1_clu40_tag0
+|        |  |           +--| (100)
+|        |  |           |  |  +----------AC0104-Ca_UGS_gt0_zzb1_dup1_indel1_clu5_tag0
+|        |  |           |  +--| (100)
+|        |  |           |     +-----------AC0151-Ca_UGS_gt0_zzb1_dup1_indel1_clu29_tag0
+|        |  |        +--| (100)
+|        |  |        |  +---------AC0184-Ca_UGS_gt0_zzb1_dup1_indel1_clu39_tag0
+|        |  |     +--| (100)
+|        |  |     |  +----------AC0162-Ca_UGS_gt0_zzb1_dup1_indel1_clu34_tag0
+|        |  |  +--| (94)
+|        |  |  |  +-----AC0120-Cb_UGS_gt0_zzb1_dup1_indel1_clu18_tag0
+|        |  +--| (93)
+|        |     |  +---AC0119-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|        |     +--| (100)
+|        |        |   +--AC0121-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|        |        +---| (100)
+|        |            +--AC0193-Cb_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1
+|     +--| (100)
+|     |  +--AC0125-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  +--| (98)
+|  |  |  +--AC0098-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |  +--| (98)
+|  |     +-------AC0151-Cb_UGS_gt1_zzb1_dup1_indel1_clu30_tag1
++--| (81)
+|  |                                                  +--AC0091-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|  |                                               +--| (67)
+|  |                                               |  |              +--AC0091-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|  |                                               |  |           +--| (98)
+|  |                                               |  |           |  |                          +--AC0099-Cb_UGS_gt1_zzb2_dup0_indel2_clu4_tag1
+|  |                                               |  |           |  |                       +--| (100)
+|  |                                               |  |           |  |                       |  +------AC0119-Ca_UGS_gt0_zzb1_dup0_indel1_clu16_tag0
+|  |                                               |  |           |  |                    +--| (80)
+|  |                                               |  |           |  |                    |  |      +--AC0100-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                               |  |           |  |                    |  +------| (100)
+|  |                                               |  |           |  |                    |         +----AC0144-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                               |  |           |  |                 +--| (98)
+|  |                                               |  |           |  |                 |  |        +-----AC0116-Ca_UGS_gt1_zzb1_dup0_indel1_clu12_tag1
+|  |                                               |  |           |  |                 |  |     +--| (100)
+|  |                                               |  |           |  |                 |  |     |  |              +--AC0121-Ca_UGS_gt1_zzb2_dup0_indel2_clu19_tag1
+|  |                                               |  |           |  |                 |  |     |  |           +--| (100)
+|  |                                               |  |           |  |                 |  |     |  |           |  +--AC0203-Cb_UGS_gt1_zzb2_dup1_indel2_clu19_tag1
+|  |                                               |  |           |  |                 |  |     |  |        +--| (100)
+|  |                                               |  |           |  |                 |  |     |  |        |  +--AC0159-Cb_UGS_gt1_zzb2_dup0_indel2_clu19_tag1
+|  |                                               |  |           |  |                 |  |     |  |     +--| (100)
+|  |                                               |  |           |  |                 |  |     |  |     |  +--AC0200-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1
+|  |                                               |  |           |  |                 |  |     |  |  +--| (99)
+|  |                                               |  |           |  |                 |  |     |  |  |  +----AC0122-Cb_UGS_gt1_zzb1_dup0_indel1_clu20_tag1
+|  |                                               |  |           |  |                 |  |     |  +--| (100)
+|  |                                               |  |           |  |                 |  |     |     +--AC0123-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1
+|  |                                               |  |           |  |                 |  |  +--| (77)
+|  |                                               |  |           |  |                 |  |  |  +---------AC0120-Ca_UGS_gt1_zzb1_dup1_indel1_clu17_tag1
+|  |                                               |  |           |  |                 |  +--| (82)
+|  |                                               |  |           |  |                 |     |     +-------AC0117-Ca_UGS_gt0_zzb1_dup0_indel1_clu14_tag1
+|  |                                               |  |           |  |                 |     |  +--| (100)
+|  |                                               |  |           |  |                 |     |  |  +----------AC0150-Cb_UGS_gt0_zzb1_dup1_indel1_clu28_tag0
+|  |                                               |  |           |  |                 |     +--| (98)
+|  |                                               |  |           |  |                 |        +-----AC0169-Cb_UGS_gt0_zzb1_dup1_indel1_clu35_tag1
+|  |                                               |  |           |  |              +--| (91)
+|  |                                               |  |           |  |              |  +-------AC0162-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                               |  |           |  |           +--| (79)
+|  |                                               |  |           |  |           |  |  +---AC0149-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                               |  |           |  |           |  +--| (69)
+|  |                                               |  |           |  |           |     +----AC0184-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                               |  |           |  |        +--| (100)
+|  |                                               |  |           |  |        |  +---AC0194-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                               |  |           |  |     +--| (97)
+|  |                                               |  |           |  |     |  |  +---AC0108-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                               |  |           |  |     |  +--| (98)
+|  |                                               |  |           |  |     |     +--AC0128-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|  |                                               |  |           |  |  +--| (96)
+|  |                                               |  |           |  |  |  |     +------AC0137-Cb_UGS_gt1_zzb1_dup0_indel1_clu26_tag1
+|  |                                               |  |           |  |  |  |  +--| (100)
+|  |                                               |  |           |  |  |  |  |  +--AC0199-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                               |  |           |  |  |  +--| (87)
+|  |                                               |  |           |  |  |     +--AC0140-Cb_UGS_gt1_zzb1_dup2_indel1_clu0_tag1
+|  |                                               |  |           |  +--| (100)
+|  |                                               |  |           |     |      +--AC0103-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                               |  |           |     |  +---| (100)
+|  |                                               |  |           |     |  |   +--AC0107-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                               |  |           |     +--| (100)
+|  |                                               |  |           |        +--AC0152-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                               |  |        +--| (97)
+|  |                                               |  |        |  |  +--AC0097-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                               |  |        |  +--| (100)
+|  |                                               |  |        |     |  +--AC0164-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                               |  |        |     +--| (100)
+|  |                                               |  |        |        +--AC0189-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                               |  |     +--| (86)
+|  |                                               |  |     |  +--AC0102-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                               |  |  +--| (78)
+|  |                                               |  |  |  +--AC0196-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                               |  +--| (58)
+|  |                                               |     +--AC0124-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                                            +--| (79)
+|  |                                            |  +--AC0170-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                         +--| (18)
+|  |                                         |  |           +--AC0094-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                         |  |        +--| (24)
+|  |                                         |  |        |  +--AC0100-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                         |  |     +--| (13)
+|  |                                         |  |     |  |                    +**AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                         |  |     |  |                 +**|
+|  |                                         |  |     |  |                 |  +**AC0143-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                         |  |     |  |              +**|
+|  |                                         |  |     |  |              |  +**AC0167-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                         |  |     |  |           +**|
+|  |                                         |  |     |  |           |  +**AC0147-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                         |  |     |  |        +**|
+|  |                                         |  |     |  |        |  +**AC0186-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                         |  |     |  |     +**|
+|  |                                         |  |     |  |     |  +**AC0201-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                         |  |     |  |  +--|
+|  |                                         |  |     |  |  |  +**AC0148-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                         |  |     |  +--| (23)
+|  |                                         |  |     |     +--AC0142-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                         |  |  +--| (2)
+|  |                                         |  |  |  |  +--AC0159-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1
+|  |                                         |  |  |  +--| (12)
+|  |                                         |  |  |     +--AC0176-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                         |  +--| (27)
+|  |                                         |     |  +--AC0096-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                         |     +--| (30)
+|  |                                         |        +--AC0191-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                      +--| (20)
+|  |                                      |  |           +--AC0126-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                      |  |        +--| (100)
+|  |                                      |  |        |  +--AC0148-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                      |  |     +--| (97)
+|  |                                      |  |     |  +--AC0133-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                                      |  |  +--| (56)
+|  |                                      |  |  |  +--AC0138-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                      |  +--| (64)
+|  |                                      |     +--AC0187-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                                   +--| (5)
+|  |                                   |  |     +--AC0092-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                                   |  |  +--| (96)
+|  |                                   |  |  |  +--AC0136-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                   |  +--| (69)
+|  |                                   |     +--AC0172-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                +--| (8)
+|  |                                |  |  +--AC0183-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                                |  +--| (71)
+|  |                                |     +--AC0199-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                             +--| (9)
+|  |                             |  +--AC0160-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                          +--| (40)
+|  |                          |  |                       +--AC0106-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                          |  |                    +--| (94)
+|  |                          |  |                    |  +--AC0132-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                          |  |                 +--| (61)
+|  |                          |  |                 |  |  +--AC0110-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                          |  |                 |  +--| (48)
+|  |                          |  |                 |     +--AC0129-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                          |  |              +--| (43)
+|  |                          |  |              |  |  +--AC0139-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                          |  |              |  +--| (98)
+|  |                          |  |              |     +--AC0188-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                          |  |           +--| (41)
+|  |                          |  |           |  |           +--AC0136-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                          |  |           |  |        +--| (100)
+|  |                          |  |           |  |        |  +--AC0173-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                          |  |           |  |     +--| (71)
+|  |                          |  |           |  |     |  +--AC0172-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                          |  |           |  |  +--| (93)
+|  |                          |  |           |  |  |  +--AC0191-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                          |  |           |  +--| (81)
+|  |                          |  |           |     |     +--AC0166-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                          |  |           |     |  +--| (35)
+|  |                          |  |           |     |  |  +--AC0171-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                          |  |           |     +--| (57)
+|  |                          |  |           |        |  +--AC0190-Ca_UGS_gt1_zzb2_dup3_indel2_clu0_tag1
+|  |                          |  |           |        +--| (38)
+|  |                          |  |           |           +--AC0193-Ca_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1
+|  |                          |  |        +--| (99)
+|  |                          |  |        |  +--AC0195-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                          |  |     +--| (74)
+|  |                          |  |     |  +--AC0126-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                          |  |  +--| (38)
+|  |                          |  |  |  |  +--AC0144-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                          |  |  |  +--| (86)
+|  |                          |  |  |     +--AC0156-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                          |  +--| (24)
+|  |                          |     +--AC0163-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                       +--| (100)
+|  |                       |  |                       +--AC0092-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                       |  |                    +--| (35)
+|  |                       |  |                    |  +--AC0181-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |  |                 +--| (17)
+|  |                       |  |                 |  +--AC0187-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                       |  |              +--| (12)
+|  |                       |  |              |  +--AC0138-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |  |           +--| (8)
+|  |                       |  |           |  |           +--AC0093-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                       |  |           |  |        +--| (43)
+|  |                       |  |           |  |        |  +--AC0168-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                       |  |           |  |     +--| (32)
+|  |                       |  |           |  |     |  +--AC0145-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                       |  |           |  |  +--| (100)
+|  |                       |  |           |  |  |  +--AC0180-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                       |  |           |  +--| (20)
+|  |                       |  |           |     +--AC0166-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                       |  |        +--| (8)
+|  |                       |  |        |  |                 +**AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                       |  |        |  |              +**|
+|  |                       |  |        |  |              |  +**AC0139-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |  |        |  |           +**|
+|  |                       |  |        |  |           |  +**AC0143-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |  |        |  |        +**|
+|  |                       |  |        |  |        |  +**AC0171-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |                       |  |        |  |     +**|
+|  |                       |  |        |  |     |  +**AC0183-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |  |        |  |  +**|
+|  |                       |  |        |  |  |  +**AC0190-Cb_UGS_gt1_zzb2_dup3_indel2_clu0_tag1
+|  |                       |  |        |  +--|
+|  |                       |  |        |     +**AC0197-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |  |     +--| (19)
+|  |                       |  |     |  |     +--AC0112-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                       |  |     |  |  +--| (99)
+|  |                       |  |     |  |  |  +--AC0202-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                       |  |     |  +--| (22)
+|  |                       |  |     |     +--AC0203-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |  |  +--| (23)
+|  |                       |  |  |  +--AC0114-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |                       |  +--| (73)
+|  |                       |     |        +---AC0108-Ca_UGS_gt1_zzb2_dup1_indel2_clu6_tag1
+|  |                       |     |     +--| (100)
+|  |                       |     |     |  +--AC0128-Ca_UGS_gt1_zzb2_dup0_indel2_clu22_tag1
+|  |                       |     |  +--| (98)
+|  |                       |     |  |  +--AC0142-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                       |     +--| (99)
+|  |                       |        +--AC0115-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                    +--| (99)
+|  |                    |  |        +--AC0101-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |                    |  |     +--| (100)
+|  |                    |  |     |  +--AC0110-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                    |  |  +--| (100)
+|  |                    |  |  |  +--AC0173-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                    |  +--| (100)
+|  |                    |     +--AC0197-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                 +--| (82)
+|  |                 |  |  +--AC0098-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+|  |                 |  +--| (82)
+|  |                 |     +----AC0104-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |              +--| (76)
+|  |              |  +--AC0131-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |           +--| (98)
+|  |           |  |           +--AC0099-Ca_UGS_gt1_zzb2_dup0_indel2_clu3_tag1
+|  |           |  |        +--| (100)
+|  |           |  |        |  +--AC0125-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  |           |  |     +--| (97)
+|  |           |  |     |  +----AC0135-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |           |  |  +--| (97)
+|  |           |  |  |  +--AC0174-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |           |  +--| (76)
+|  |           |     +--AC0113-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |        +--| (100)
+|  |        |  +--AC0118-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1
+|  |     +--| (93)
+|  |     |  |  +---AC0153-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |     |  +--| (88)
+|  |     |     +--AC0161-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1
+|  |  +--| (100)
+|  |  |  +--AC0168-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|  +--| (95)
+|     |  +--AC0095-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|     +--| (95)
+|        +--AC0095-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1
+|
++--AC0181-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1
+
+
+Consensus tree in newick format: 
+
+(AC0090-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0257054780,((((AC0090-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0658650568,((((((((((((((((((((((AC0093-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0000000000,AC0106-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0000000000):0.0000000000,AC0132-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0000000000):0.0000020631,AC0102-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0000020631)18:0.0000020631,(((AC0094-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0001393730,AC0192-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0000020631)99:0.0001393656,AC0169-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0027891561)30:0.0000020631,AC0122-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0002784269)20:0.0000020631)11:0.0000020631,((AC0129-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0000020631,AC0180-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0005565222)98:0.0001393540,AC0131-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0002783784)16:0.0000020631)28:0.0000020631,((((((((((AC0096-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0221208748,AC0118-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0277097877)98:0.0059862512,(AC0109-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0330768114,((((AC0115-Ca_UGS_gt0_zzb1_dup0_indel1_clu11_tag0:0.0847464431,AC0182-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0814524640)99:0.0119269225,AC0153-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0450089900)100:0.0054862181,AC0158-Ca_UGS_gt0_zzb0_dup0_indel0_clu31_tag0:0.1298696632)100:0.0090142507,AC0127-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0496633116)100:0.0098593315)100:0.0040982889)100:0.0145522644,AC0154-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0168196273)100:0.0101376935,AC0130-Ca_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0060576936)100:0.0053736216,AC0195-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0060196050)100:0.0063872367,(AC0101-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0002787227,AC0167-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0001393041)93:0.0002784791)76:0.0000020631,AC0107-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0002784231)15:0.0000020631,(AC0147-Cb_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0005566110,AC0164-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0001393708)39:0.0000020631)10:0.0000020631,(AC0178-Cb_UGS_gt0_zzb0_dup0_indel0_clu1_tag0:0.0004172758,(AC0189-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0011146280,AC0201-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0001392171)100:0.0002786503)35:0.0000020631)31:0.0000020631,AC0188-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0001393856)98:0.0001394065)76:0.0000987728,AC0111-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0001802034)100:0.0070112769,AC0182-Cb_UGS_gt0_zzb0_dup0_indel0_clu38_tag0:0.0697867246)81:0.0120777091,((AC0123-Ca_UGS_gt0_zzb1_dup0_indel1_clu1_tag0:0.0197856286,AC0124-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0160352063)68:0.0020794981,AC0158-Cb_UGS_gt0_zzb0_dup0_indel0_clu32_tag0:0.1236404777)68:0.0013090318)86:0.0206427673,AC0163-Cb_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0597133128)86:0.0047020253,(AC0140-Ca_UGS_gt0_zzb1_dup2_indel1_clu1_tag0:0.0238830297,AC0149-Ca_UGS_gt0_zzb1_dup1_indel1_clu1_tag0:0.0144996403)100:0.0360378345)86:0.0125653254,AC0116-Cb_UGS_gt0_zzb1_dup0_indel1_clu13_tag0:0.0416562938)100:0.0261734491,((AC0113-Cb_UGS_gt0_zzb1_dup1_indel1_clu9_tag0:0.0009434106,AC0202-Cb_UGS_gt0_zzb1_dup0_indel1_clu9_tag0:0.0008706559)100:0.0735079367,AC0170-Ca_UGS_gt0_zzb1_dup0_indel1_clu36_tag0:0.0667815450)69:0.0108935377)39:0.0020476597,((((AC0112-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0:0.0000020671,(AC0133-Cb_UGS_gt0_zzb1_dup0_indel1_clu8_tag0:0.0001397336,AC0145-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0:0.0001397245)100:0.0004177638)100:0.0304547909,AC0194-Ca_UGS_gt0_zzb1_dup1_indel1_clu8_tag0:0.0240086992)100:0.0552000824,((AC0135-Cb_UGS_gt0_zzb1_dup1_indel1_clu24_tag0:0.0399738903,AC0156-Ca_UGS_gt0_zzb1_dup1_indel1_clu24_tag0:0.0769212511)100:0.1077512300,AC0179-Ca_UGS_gt0_zzb0_dup0_indel0_clu37_tag0:0.0068544719)100:0.0823432350)62:0.0053579414,AC0130-Cb_UGS_gt0_zzb0_dup0_indel0_clu23_tag0:0.1288392050)54:0.0028317373)100:0.0201559890,((AC0109-Ca_UGS_gt0_zzb0_dup0_indel0_clu7_tag0:0.0008494437,(AC0186-Ca_UGS_gt0_zzb1_dup0_indel1_clu7_tag0:0.0007191922,AC0192-Cb_UGS_gt0_zzb0_dup0_indel0_clu7_tag0:0.0002604722)100:0.0832192625)100:0.1208403779,(((((((AC0117-Cb_UGS_gt0_zzb1_dup0_indel1_clu15_tag0:0.0853855725,AC0200-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0:0.0007379704)92:0.0000945415,AC0160-Cb_UGS_gt0_zzb1_dup1_indel1_clu21_tag0:0.0000020631)92:0.0002777504,AC0176-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0:0.0000020631)92:0.0001391732,AC0179-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0:0.0009730951)100:0.0002777154,AC0152-Cb_UGS_gt0_zzb1_dup0_indel1_clu21_tag0:0.0000020671)100:0.0611950834,AC0154-Ca_UGS_gt0_zzb1_dup0_indel1_clu21_tag0:0.0160093249)100:0.0274320285,AC0127-Cb_UGS_gt0_zzb0_dup0_indel0_clu21_tag0:0.0000021049)100:0.1130077121)100:0.0109532376)100:0.0503327188,(AC0097-Cb_UGS_gt0_zzb1_dup1_indel1_clu2_tag0:0.0574120303,(AC0161-Ca_UGS_gt0_zzb1_dup0_indel1_clu33_tag0:0.0463256051,AC0174-Cb_UGS_gt0_zzb1_dup1_indel1_clu33_tag0:0.0136434578)100:0.0598415021)100:0.0814260288)85:0.0124878294,(((AC0114-Ca_UGS_gt0_zzb1_dup1_indel1_clu10_tag0:0.0151824374,AC0178-Ca_UGS_gt0_zzb0_dup0_indel0_clu10_tag0:0.0221708710)100:0.1324757113,AC0150-Ca_UGS_gt0_zzb1_dup1_indel1_clu27_tag0:0.1367675097)85:0.0245085710,(AC0137-Ca_UGS_gt0_zzb1_dup0_indel1_clu25_tag0:0.1266700911,AC0196-Cb_UGS_gt0_zzb1_dup1_indel1_clu40_tag0:0.1328727398)83:0.0136527121)84:0.0045134194)100:0.0340437418,(AC0104-Ca_UGS_gt0_zzb1_dup1_indel1_clu5_tag0:0.1032183690,AC0151-Ca_UGS_gt0_zzb1_dup1_indel1_clu29_tag0:0.1084865890)100:0.0211468953)100:0.0347215486,AC0184-Ca_UGS_gt0_zzb1_dup1_indel1_clu39_tag0:0.0930334979)100:0.0131118774,AC0162-Ca_UGS_gt0_zzb1_dup1_indel1_clu34_tag0:0.0979559526)100:0.0224016752,AC0120-Cb_UGS_gt0_zzb1_dup1_indel1_clu18_tag0:0.0589457758)94:0.0153766221,(AC0119-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0429310769,(AC0121-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0001393230,AC0193-Cb_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1:0.0000020631)100:0.0414274761)100:0.0112979850)93:0.0065899725)92:0.0085470433,AC0125-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0290901897)100:0.0160465295,(AC0098-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0185364666,AC0151-Cb_UGS_gt1_zzb1_dup1_indel1_clu30_tag1:0.0750938934)98:0.0044379821)98:0.0069412511,(((((((((((((((((AC0091-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0019380258,(((((AC0091-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0049138910,(((((((((AC0099-Cb_UGS_gt1_zzb2_dup0_indel2_clu4_tag1:0.0136036734,AC0119-Ca_UGS_gt0_zzb1_dup0_indel1_clu16_tag0:0.0696539488)100:0.0339516180,(AC0100-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0020763769,AC0144-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0486298532)100:0.0662957535)80:0.0061601212,(((AC0116-Ca_UGS_gt1_zzb1_dup0_indel1_clu12_tag1:0.0529542228,(((((AC0121-Ca_UGS_gt1_zzb2_dup0_indel2_clu19_tag1:0.0000020631,AC0203-Cb_UGS_gt1_zzb2_dup1_indel2_clu19_tag1:0.0005587257)100:0.0216981430,AC0159-Cb_UGS_gt1_zzb2_dup0_indel2_clu19_tag1:0.0033660007)100:0.0010727221,AC0200-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1:0.0011622843)100:0.0182573858,AC0122-Cb_UGS_gt1_zzb1_dup0_indel1_clu20_tag1:0.0472472266)99:0.0106832390,AC0123-Cb_UGS_gt1_zzb1_dup0_indel1_clu19_tag1:0.0115228849)100:0.0301382917)100:0.0215860199,AC0120-Ca_UGS_gt1_zzb1_dup1_indel1_clu17_tag1:0.0906586664)77:0.0038989706,((AC0117-Ca_UGS_gt0_zzb1_dup0_indel1_clu14_tag1:0.0753523724,AC0150-Cb_UGS_gt0_zzb1_dup1_indel1_clu28_tag0:0.0993426401)100:0.0233480996,AC0169-Cb_UGS_gt0_zzb1_dup1_indel1_clu35_tag1:0.0610525526)98:0.0102056417)82:0.0060515839)98:0.0051100240,AC0162-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0776603423)91:0.0060698877,(AC0149-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0398845595,AC0184-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0485816888)69:0.0032821120)79:0.0042803621,AC0194-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0412323684)100:0.0130956539,(AC0108-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0369052270,AC0128-Cb_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0330224981)98:0.0064568422)97:0.0053586588,((AC0137-Cb_UGS_gt1_zzb1_dup0_indel1_clu26_tag1:0.0669799152,AC0199-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000021230)100:0.0272282477,AC0140-Cb_UGS_gt1_zzb1_dup2_indel1_clu0_tag1:0.0228648193)87:0.0040274051)96:0.0047345198,((AC0103-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000921414,AC0107-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0126459942)100:0.0379684085,AC0152-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000022733)100:0.0210546302)100:0.0166660332)98:0.0024154157,(AC0097-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0022451927,(AC0164-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0004033253,AC0189-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0030810696)100:0.0037769258)100:0.0013658943)97:0.0028845272,AC0102-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0016498402)86:0.0012230372,AC0196-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0145034519)78:0.0011922214,AC0124-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0006931895)58:0.0001561002)67:0.0002749424,AC0170-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0009857895)79:0.0005419525,((((AC0094-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0002775304,AC0100-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0002774257)24:0.0000020631,(((((((AC0103-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000000000,AC0143-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000000000):0.0000000000,AC0167-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000000000):0.0000000000,AC0147-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000000000):0.0000000000,AC0186-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000000000):0.0000000000,AC0201-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000000000):0.0000000000,AC0148-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000000000):0.0000020631,AC0142-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)23:0.0000020631)13:0.0000020631,(AC0159-Ca_UGS_gt1_zzb2_dup0_indel2_clu0_tag1:0.0001386605,AC0176-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0002773850)12:0.0000020631)2:0.0000020631,(AC0096-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0106689261,AC0191-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0001386350)30:0.0000020631)27:0.0000020631)18:0.0000020631,((((AC0126-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0002776998,AC0148-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0001384452)100:0.0005552671,AC0133-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0001385771)97:0.0001387967,AC0138-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0006940349)56:0.0000020631,AC0187-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0001386409)64:0.0001386746)20:0.0000021983,((AC0092-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0000020631,AC0136-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)96:0.0001385909,AC0172-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)69:0.0001386470)5:0.0001385913,(AC0183-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0004164009,AC0199-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)71:0.0001386616)8:0.0000020631,AC0160-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0000020631)9:0.0000020631,((((((((AC0106-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0001386605,AC0132-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0002773824)94:0.0001386635,(AC0110-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0005549182,AC0129-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0000020631)48:0.0000020631)61:0.0001386757,(AC0139-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631,AC0188-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0000020631)98:0.0001386046)43:0.0000026191,((((AC0136-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631,AC0173-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)100:0.0002773726,AC0172-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0004164469)71:0.0000020631,AC0191-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)93:0.0001386555,((AC0166-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0001386078,AC0171-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0002772500)35:0.0000020631,(AC0190-Ca_UGS_gt1_zzb2_dup3_indel2_clu0_tag1:0.0002773547,AC0193-Ca_UGS_gt1_zzb2_dup-1_indel2_clu0_tag1:0.0005544895)38:0.0000020631)57:0.0000020631)81:0.0001386607)41:0.0000020631,AC0195-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0001386415)99:0.0001386559,AC0126-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)74:0.0000020583,(AC0144-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0263400638,AC0156-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0280511044)86:0.0055478294)38:0.0001370546,AC0163-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0043189441)24:0.0000020631)40:0.0000020631,((((((((AC0092-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0006935992,AC0181-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0002773684)35:0.0000020631,AC0187-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0002774357)17:0.0000020631,AC0138-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020631)12:0.0000020631,((((AC0093-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0001386339,AC0168-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0026397505)43:0.0000020631,AC0145-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0000020631)32:0.0000020631,AC0180-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0002773849)100:0.0001386798,AC0166-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0002774247)20:0.0000020631)8:0.0000020631,((((((AC0111-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0000000000,AC0139-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000000000):0.0000000000,AC0143-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000000000):0.0000000000,AC0171-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0000000000):0.0000000000,AC0183-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000000000):0.0000000000,AC0190-Cb_UGS_gt1_zzb2_dup3_indel2_clu0_tag1:0.0000000000):0.0000000000,AC0197-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000000000):0.0000020631)8:0.0000020631,((AC0112-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000020631,AC0202-Ca_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0015272173)99:0.0001386367,AC0203-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0001386604)22:0.0000020631)19:0.0000020631,AC0114-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0001386512)23:0.0000020631,(((AC0108-Ca_UGS_gt1_zzb2_dup1_indel2_clu6_tag1:0.0383959869,AC0128-Ca_UGS_gt1_zzb2_dup0_indel2_clu22_tag1:0.0340558228)100:0.0175191842,AC0142-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0020362519)98:0.0004644786,AC0115-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000020631)99:0.0002774127)73:0.0001381344)100:0.0034841560,(((AC0101-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0000020671,AC0110-Ca_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0046016217)100:0.0011098986,AC0173-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0000020671)100:0.0012161060,AC0197-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0001723848)100:0.0024146795)99:0.0012426693,(AC0098-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0115097716,AC0104-Cb_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0440464739)82:0.0027352499)82:0.0011686860,AC0131-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0062020306)76:0.0013217148,((((AC0099-Ca_UGS_gt1_zzb2_dup0_indel2_clu3_tag1:0.0135330623,AC0125-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0000020631)100:0.0030760632,AC0135-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0486476896)97:0.0049288842,AC0174-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0049570861)97:0.0022655164,AC0113-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0097578629)76:0.0004869565)98:0.0047679593,AC0118-Ca_UGS_gt1_zzb1_dup1_indel1_clu0_tag1:0.0133526185)100:0.0049186607,(AC0153-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0396678560,AC0161-Cb_UGS_gt1_zzb1_dup0_indel1_clu0_tag1:0.0098839897)88:0.0022944656)93:0.0029088077,AC0168-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0174153529)100:0.0036754949,(AC0095-Ca_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0170252193,AC0095-Cb_UGS_gt1_zzb2_dup2_indel2_clu0_tag1:0.0237429359)95:0.0028324827)95:0.0049344035)81:0.0052488943,AC0181-Cb_UGS_gt1_zzb2_dup1_indel2_clu0_tag1:0.0203432226);
+
+TIME STAMP
+----------
+
+Date and time: Wed Jan 29 11:57:18 2020
+Total CPU time used: 11324.59748 seconds (3h:8m:44s)
+Total wall-clock time used: 1919.234099 seconds (0h:31m:59s)
+
