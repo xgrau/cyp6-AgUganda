@@ -451,3 +451,8 @@ BETTER TREE FOUND at iteration 765: -202970.116
 Iteration 770 / LogL: -202973.331 / Time: 0h:28m:29s (0h:3m:31s left)
 Iteration 780 / LogL: -203011.314 / Time: 0h:28m:49s (0h:3m:8s left)
 Iteration 790 / LogL: -202975.662 / Time: 0h:29m:12s (0h:2m:46s left)
+Iteration 800 / LogL: -203189.437 / Time: 0h:29m:34s (0h:2m:24s left)
+Log-likelihood cutoff on original alignment: -203085.174
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.991
+Iteration 810 / LogL: -203471.203 / Time: 0h:29m:55s (0h:3m:19s left)
+Iteration 820 / LogL: -204960.682 / Time: 0h:30m:18s (0h:2m:57s left)
