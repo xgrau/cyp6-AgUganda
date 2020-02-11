@@ -1,0 +1,113 @@
+Data:
+* Samples     =  765
+* Populations =  {'GNS', 'BFM', 'AOM', 'CMS', 'KES', 'UGS', 'GWA', 'GAS', 'BFS'}
+population
+AOM     60
+BFM     69
+BFS     81
+CMS    275
+GAS     56
+GNS     31
+GWA     46
+KES     44
+UGS    103
+dtype: int64
+Variants phased...
+(11332701,)
+Genotypes phased...
+(11332701, 765, 2)
+Expand phase haplotypes...
+(11332701, 1530)
+Cast sample metadata...
+(765, 3)
+Cast sample metadata...
+(1530, 3)
+Population dict...
+Population dict phased...
+Species dict...
+Species dict phased...
+Genotypes phased to allele counts (population)...
+(11332701,)
+Haplotypes phased to allele counts (population)...
+(11332701,)
+Filters phased...
+(7629561, 765, 2) / (11332701, 765, 2)
+in loci:                     2398
+in loci, nonsyn and min frq: 208
+Load accessibility array...
+Minor allele freqs...
+LD Rogers & Huff...
+LD Lewontin D'...
+Is 28497967 centre in phased array? True: index 6809110 
+Phased variants and samples around 28497967: (4142, 1530)
+total haps: 1530
+num haps per cluster (only clusters n>=76):
+hap_cluster
+103    113
+231     94
+233    157
+dtype: int64
+centre 28497967 print clusters: [103 231 233] 		size of clusters:  [113  94 157]
+centre 28497967 print clusters total size: 364 / 1530
+centre 28497967 print EHH for clusters: [103 231 233] 		size of clusters:  [113  94 157]
+EHH cluster_103
+EHH cluster_231
+EHH cluster_233
+EHH cluster_no_wt
+EHH cluster_no_alt
+cluster_103
+h = 0.069848 +/- 0.003211 SE, 0.053089-0.070463 CI95, n=113
+cluster_231
+h = 0.144132 +/- 0.005278 SE, 0.125526-0.145629 CI95, n=94
+cluster_233
+h = 0.325249 +/- 0.004037 SE, 0.316543-0.327130 CI95, n=157
+cluster_no_wt
+h = 0.990770 +/- 0.000021 SE, 0.990754-0.990818 CI95, n=1152
+cluster_no_alt
+h = 0.505495 +/- 0.052125 SE, 0.423077-0.538462 CI95, n=14
+Retain...
+Garud H cluster_103 - chr...
+Hap div cluster_103 - chr...
+Plots   cluster_103...
+Garud H cluster_231 - chr...
+Hap div cluster_231 - chr...
+Plots   cluster_231...
+Garud H cluster_233 - chr...
+Hap div cluster_233 - chr...
+Plots   cluster_233...
+Garud H cluster_no_wt - chr...
+Hap div cluster_no_wt - chr...
+Plots   cluster_no_wt...
+Garud H cluster_no_alt - chr...
+Hap div cluster_no_alt - chr...
+Plots   cluster_no_alt...
+Locus: 4142 vars, cluster cluster_103
+Hap div cluster_103 	 = 0.426675 +/- 0.005559 SE, 0.416345-0.429858 CI95, n=113
+H12 cluster_103     	 = 0.723571 +/- 0.005395 SE, 0.721301-0.736448 CI95, n=113
+H2H1 cluster_103    	 = 0.019579 +/- 0.000967 SE, 0.016739-0.020000 CI95, n=113
+Locus: 4142 vars, cluster cluster_231
+Hap div cluster_231 	 = 0.678563 +/- 0.004493 SE, 0.671576-0.682562 CI95, n=94
+H12 cluster_231     	 = 0.589454 +/- 0.006943 SE, 0.585617-0.602035 CI95, n=94
+H2H1 cluster_231    	 = 0.206772 +/- 0.008272 SE, 0.193560-0.213599 CI95, n=94
+Locus: 4142 vars, cluster cluster_233
+Hap div cluster_233 	 = 0.713702 +/- 0.002712 SE, 0.710008-0.716294 CI95, n=157
+H12 cluster_233     	 = 0.503286 +/- 0.004084 SE, 0.500657-0.509698 CI95, n=157
+H2H1 cluster_233    	 = 0.173037 +/- 0.004498 SE, 0.165165-0.176739 CI95, n=157
+Locus: 4142 vars, cluster cluster_no_wt
+Hap div cluster_no_wt 	 = 0.995565 +/- 0.000014 SE, 0.995558-0.995611 CI95, n=1152
+H12 cluster_no_wt     	 = 0.006710 +/- 0.000022 SE, 0.006628-0.006720 CI95, n=1152
+H2H1 cluster_no_wt    	 = 0.815723 +/- 0.001538 SE, 0.814513-0.824020 CI95, n=1152
+Locus: 4142 vars, cluster cluster_no_alt
+Hap div cluster_no_alt 	 = 0.934066 +/- 0.017375 SE, 0.923077-0.961538 CI95, n=14
+H12 cluster_no_alt     	 = 0.181741 +/- 0.021385 SE, 0.147929-0.195266 CI95, n=14
+H2H1 cluster_no_alt    	 = 0.407519 +/- 0.075134 SE, 0.360000-0.526316 CI95, n=14
+pi_n cluster_103 	 = 4.438E-06 +/- 2.184E-07 SE, 3.731E-06-4.477E-06 CI95, n=113
+pi_s cluster_103 	 = 1.479E-06 +/- 9.839E-08 SE, 1.492E-06-1.492E-06 CI95, n=113
+r_n_s cluster_103	 = 3.009E+00 +/- 1.485E-01 SE, 3.000E+00-3.000E+00 CI95, n=113
+pi_n cluster_231 	 = 8.002E-06 +/- 3.485E-07 SE, 6.583E-06-8.088E-06 CI95, n=94
+pi_s cluster_231 	 = 4.445E-06 +/- 2.405E-07 SE, 3.595E-06-4.493E-06 CI95, n=94
+r_n_s cluster_231	 = 1.802E+00 +/- 6.595E-02 SE, 1.750E+00-1.800E+00 CI95, n=94
+pi_n cluster_233 	 = 1.061E-05 +/- 1.968E-07 SE, 1.014E-05-1.067E-05 CI95, n=157
+pi_s cluster_233 	 = 4.259E-06 +/- 1.178E-07 SE, 3.750E-06-4.286E-06 CI95, n=157
+r_n_s cluster_233	 = 2.492E+00 +/- 5.252E-02 SE, 2.365E+00-2.703E+00 CI95, n=157
+extra mutations: (103, 4)
