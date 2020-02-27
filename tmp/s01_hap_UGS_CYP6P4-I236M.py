@@ -624,7 +624,6 @@ loc_components_id_dati.to_csv("%s/%s_%s.hn_result.csv" % (outdir,outcode,l_nom),
 
 
 # Distribution of populations per haplotype
-#
 # Barplots:
 
 
