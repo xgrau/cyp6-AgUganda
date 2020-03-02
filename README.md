@@ -18,15 +18,13 @@ Notebooks:
 
 * `results_phylogeny`: phylogenies of haplotypes using variants in the cluster (using IQTREE). Results in newick (`.treefile`) & pdf.
 
-* `2020-02-27_hap_analysis_ZZBD_tag.ipynb`: quick analysis of haplotype networks built around another variant of interest, `2R:28491424`, which is in LD with both the duplication and the ZZB insertion in UGS. I wanted to see if we can find it elsewhere in the Ag1k samples, but it's not there, so this is not useful at all. Results go to `results_TAG`.
+* `2020-02-27_hap_analysis_ZZBD_tag.ipynb`: quick analysis of haplotype networks built around another variant of interest, `2R:28491424`, which is in LD with both the duplication and the ZZB insertion in UGS. I wanted to see if we can find it elsewhere in the Ag1k samples, but it's not there, so this is not useful. Results go to `results_TAG`.
 
 ## Results
 
-### Phylogeny
+### Main cluster
 
-#### Main cluster
-
-Phylogeny shows a cluster of swept haplotypes (coincident with the cluster identified in haplotype clustering analysis, `cluster_0`). It has **strong signals of selection**. It contains the following genotypes:
+Phylogeny & haplotype cluster shows a group of swept haplotypes with strong signals of selection. It contains the following genotypes:
 
 * all sequences have the *I236M* mutation
 * all sequences have the *zzb* transposon OR come from genomes that have it (het)
@@ -36,7 +34,7 @@ Phylogeny shows a cluster of swept haplotypes (coincident with the cluster ident
 
 Therefore, the selective sweep occurred **after** the *I236M*, *zzb* insertion and indels; but **before** the duplication occurred. This is consistent with the late emergence of the duplication (2009) relative to other mutations (*zzb* in 2004, *I236M* in 2005).
 
-#### Secondary clusters
+### Secondary cluster
 
 There is a second cluster of highly similar haplotypes that do not have the *I236M* mutation (`cluster_1`). This cluster has signals of selection, and the following genotypes:
 
