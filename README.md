@@ -18,7 +18,7 @@ Notebooks:
 
 * `results_phylogeny`: phylogenies of haplotypes using variants in the cluster (using IQTREE). Results in newick (`.treefile`) & pdf.
 
-* `2020-02-27_hap_analysis_ZZBD_tag.ipynb`: quick analysis of haplotype networks built around another variant of interest, `2R:28491424`, which is in LD with both the duplication and the ZZB insertion in UGS. I wanted to see if we can find it elsewhere in the Ag1k samples, but it's not there, so this is not useful. Results go to `results_TAG`.
+* in folder `other/`, there is another notebook I used to do a quick analysis of haplotype networks built around another variant of interest, `2R:28491424`, which was in LD with both the duplication and the ZZB insertion in UGS. I wanted to see if we can find it elsewhere in the Ag1k samples, but it's not there, so this is not useful. Results go to `results_TAG`.
 
 ## Results
 
