@@ -14,7 +14,7 @@ ftp://ngs.sanger.ac.uk/production/ag1000g/phase1/AR3
 
 Notebooks:
 
-* `2020-02-27_hap_analysis_UGS_sweep.ipynb`: notebook with analysis of haplotype similarity and selection signals in UGS. The cluster of swept haplotypes is defined using genetic distances of genotypes located +/- 1000 variants around the Cypaa1 start. Selection statistics are estimated for the Cyp6 custer (EHH, Garud H). Results and plots go to folder `results_sweep`.
+* `2020-02-27_hap_analysis_UGS_sweep.ipynb`: notebook with analysis of haplotype similarity and selection signals in UGS. The cluster of swept haplotypes is defined using genetic distances of genotypes located +/- 1000 variants around the *Cypaa1* start coordinate (results taken from `sweep_haplotypes.csv`). Selection statistics are estimated for the Cyp6 custer (EHH, Garud H, hap diversity). Results and plots go to folder `results_sweep`.
 
 * `results_phylogeny`: phylogenies of haplotypes using variants in the cluster (using IQTREE). Results in newick (`.treefile`) & pdf.
 
