@@ -14,7 +14,7 @@ ftp://ngs.sanger.ac.uk/production/ag1000g/phase1/AR3
 
 Notebooks:
 
-* `2020-02-27_hap_analysis_CYP6P4_236M.ipynb`: notebook with analysis of haplotype similarity and selection signals in UGS. Haplotype networks are built from variants around CYP6P4 236M allele, and selection statistics are estimated for the Cyp6 custer (EHH, Garud H). Results and plots go to folder `results_236M_UGS`.
+* `2020-02-27_hap_analysis_UGS_sweep.ipynb`: notebook with analysis of haplotype similarity and selection signals in UGS. The cluster of swept haplotypes is defined using genetic distances of genotypes located +/- 1000 variants around the Cypaa1 start. Selection statistics are estimated for the Cyp6 custer (EHH, Garud H). Results and plots go to folder `results_sweep`.
 
 * `results_phylogeny`: phylogenies of haplotypes using variants in the cluster (using IQTREE). Results in newick (`.treefile`) & pdf.
 
@@ -36,9 +36,4 @@ Therefore, the selective sweep occurred **after** the *I236M*, *zzb* insertion a
 
 ### Secondary cluster
 
-There is a second cluster of highly similar haplotypes that do not have the *I236M* mutation (`cluster_1`). This cluster has signals of selection, and the following genotypes:
-
-* no *I236M* mutation
-* mostly from specimens that are heterozygous for the *indel* and *zzb*, with some coming from specimens that don't have indels or zzb.
-* mostly from specimens *without duplication*, with some coming from het specimens.
-* yet, none of them has the tagging variant (`tag0`), so we can conclude that they're 100% wt.
+There is a second cluster of highly similar haplotypes that do not have any resistance mutations. This cluster has signals of selection too. Not explored right now.
