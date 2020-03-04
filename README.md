@@ -7,7 +7,7 @@ Haplotype analyses of the CYP6 cluster in *Anopheles gambiae* samples from Ugand
 Download Ag1000G Phase 1 data from here
 
 ```bash
-ftp://ngs.sanger.ac.uk/production/ag1000g/phase1/AR3
+ftp://ngs.sanger.ac.uk/production/ag1000g/phase1/AR3.1
 ```
 
 ## Contents
